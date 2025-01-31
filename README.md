@@ -6,6 +6,7 @@ Wearanize_plus (Wearanize+) represents a sleep research project carried out at t
 
 This repository contains scripts to preprocess the raw data and perform preliminary analysis.
 For more details on the project, see this publication: [Wearanize+ Publication](https://doi.org/10.31219/osf.io/dth8y_v1)
+
 Reference: Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research. Center for Open Science.
 
 ## Accessing the Dataset
