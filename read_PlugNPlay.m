@@ -15,7 +15,7 @@ clear all
 close all
 
 %% Load a Sample Subject's Data
-data_dir = "C:\Wearanize+_PlugNPlay_v1.0"  # This is the data directory; update as needed.
+data_dir = "C:\Wearanize+_PlugNPlay_v1.0"  % This is the data directory; %update as needed.
 sub_1 = 'Sub005s1';
 sub_dir = fullfile(data_dir, [sub_1 '.parquet']);
 
