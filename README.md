@@ -14,7 +14,7 @@ To [access the data](https://data.ru.nl/collections/di/dccn/DAC_3028005.01_352),
 The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchronized version is titled *Wearanize+_PlugNPlay_v1.0.zip*.
 
 ## Dataset Contents (PlugNPlay)
-#Column descriptions:
+**Column descriptions:**
 1. 'SubjectID': Unique identifier for the subject.
 2. 'Device': Name of the recording device. (Devices: Zmax, PSG, Empatica, ActivPAL; keys: Zmax, PSG, Emp, Activpal).
 3. 'NumOfSignals': Number of signals recorded in 'SignalData'.
@@ -23,11 +23,11 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 6. 'SamplingRate': Sampling rate of each signal.
 7. 'SignalDurationSec': Duration of each signal in seconds.
 8. 'SignalLength': Length of each signal in data points.
-9. 'SignalMin'/'SignalMax': Minimum and maximum values of signals.
-10. 'SignalType'/'SignalUnit': Signal modalities (e.g., EEG, EMG) and units.
-11. 'SignalData': Actual recorded data for each signal.
-12. 'SleepScoreEpochs': Number of 30-second epochs in associated sleep scores.
-13. 'SleepScores': Available sleep scores identified from the associated device's data.
+9-10. 'SignalMin'/'SignalMax': Minimum and maximum values of signals.
+11-12. 'SignalType'/'SignalUnit': Signal modalities (e.g., EEG, EMG) and units.
+13. 'SignalData': Actual recorded data for each signal.
+14. 'SleepScoreEpochs': Number of 30-second epochs in associated sleep scores.
+15. 'SleepScores': Available sleep scores identified from the associated device's data.
 
 ## Reference
 
