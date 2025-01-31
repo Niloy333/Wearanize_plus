@@ -23,9 +23,10 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 6. 'SamplingRate': Sampling rate of each signal.
 7. 'SignalDurationSec': Duration of each signal in seconds.
 8. 'SignalLength': Length of each signal in data points.
-9-10. 'SignalMin'/'SignalMax': Minimum and maximum values of signals.
-
-11-12. 'SignalType'/'SignalUnit': Signal modalities (e.g., EEG, EMG) and units.
+9. 'SignalMin': Minimum value of signals associated signal.
+10. 'SignalMax': Maximum value of signals associated signal.
+11. 'SignalType': Signal modalities (e.g., EEG, EMG).
+12. 'SignalUnit': Signal measurement unit.
 13. 'SignalData': Actual recorded data for each signal.
 14. 'SleepScoreEpochs': Number of 30-second epochs in associated sleep scores.
 15. 'SleepScores': Available sleep scores identified from the associated device's data.
