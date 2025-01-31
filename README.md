@@ -31,4 +31,4 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 
 ## Reference
 
-Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). *Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research*. Center for Open Science.
+Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). *Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research*. Center for Open Science. DOI: 10.31219/osf.io/dth8y_v1
