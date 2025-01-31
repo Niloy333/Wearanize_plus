@@ -20,7 +20,7 @@ import glob
 #%% Load a Subject's Data
 
 # Define the root directory where the dataset is stored
-data_dir = r"C:\3028005.01_Local\Wearanize+_dataset_v1.0\7.PlugNPlay_version"  # Update this path as needed
+data_dir = r"C:\Wearanize+_PlugNPlay_v1.0"  # This is the data directory; update as needed.
 
 # Define a sample subject ID (e.g., 'Sub005')
 sub_1 = 'Sub005s1'
