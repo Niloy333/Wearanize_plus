@@ -4,7 +4,7 @@ Wearanize+ represents a sleep research project carried out at the Donders Centre
 
 ## Overview
 
-This repository contains scripts to preprocess the raw data and perform preliminary analysis.
+This repository contains scripts to preprocess the raw data and perform preliminary analysis on the Wearanize+ dataset v1.0.
 For more details on the project, see [Wearanize+ Dataset v1.0 Publication](https://doi.org/10.31219/osf.io/dth8y_v1)
 
 ## Accessing the Dataset
