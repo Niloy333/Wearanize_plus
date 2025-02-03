@@ -1,4 +1,4 @@
-# Wearanize Plus (Wearanize+)
+# Wearanize Plus (*Wearanize+*)
 
 Wearanize+ represents a sleep research project carried out at the Donders Centre for Cognitive Neuroimaging, Radboud University, Nijmegen, The Netherlands, and its resultant dataset.
 
