@@ -1,6 +1,6 @@
 # Wearanize Plus (*Wearanize+*)
 
-Wearanize+ is a research project in which multiple wearable devices were used to record participants' overnight sleep. The resultant dataset contains raw data from three wearable devices (Zmax, Empatica E4, and ActivPAL) along with parallel polysomnography (SOMNOScreen plus) from 130 participants. The project was carried out at the Donders Centre for Cognitive Neuroimaging, Radboud University, Nijmegen, The Netherlands, by the members of the [Donders Sleep & Memory Lab](https://dreslerlab.org/).
+Wearanize+ is a research project in which multiple wearable devices were used to record participants' overnight sleep. The resultant dataset contains raw data from three wearable devices (Zmax, Empatica E4, and ActivPAL) along with parallel polysomnography (SOMNOScreen plus) from 130 participants. The project was carried out at the Donders Centre for Cognitive Neuroimaging, Radboud University, Nijmegen, The Netherlands, by the members of [Donders Sleep & Memory Lab](https://dreslerlab.org/).
 
 ## Overview
 
