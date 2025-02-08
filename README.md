@@ -1,6 +1,6 @@
 # Wearanize Plus (*Wearanize+*)
 
-Wearanize+ represents a sleep research project carried out at the Donders Centre for Cognitive Neuroimaging, Radboud University, Nijmegen, The Netherlands, and its resultant dataset.
+Wearanize+ represents a research project in which multiple wearable devices were used to record participants' overnight sleep and its resultant dataset. It was carried out at the Donders Centre for Cognitive Neuroimaging, Radboud University, Nijmegen, The Netherlands, by the members of the [Donders Sleep & Memory Lab](https://dreslerlab.org/).
 
 ## Overview
 
