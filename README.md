@@ -11,9 +11,10 @@ For more details on the project, see [Wearanize+ Dataset v1.0 Publication](https
 
 ## Accessing the Dataset
 
-The Wearanize+ dataset is publicly available on the Radboud Repository.  
-To [access the data](https://data.ru.nl/collections/di/dccn/DAC_3028005.01_352), please open an [ORCID account](https://orcid.org/) and follow [these instructions](https://data.ru.nl/doc/help/helppages/visitor-manual/vm-request-access.html?14=). Please see the [FAQ section](https://data.ru.nl/doc/help/helppages/faq.html?20=) to solve common issues.
-The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchronized version is titled *Wearanize+_PlugNPlay_v1.0.zip*. If you still have trouble accessing the dataset (or have questions), please contact Niloy Sikder at niloy.sikder@donders.ru.nl, mentioning your ORCID ID.
+The Wearanize+ dataset is publicly available on the Radboud Repository.
+(This link is temporarily unavailable; we are working on making the data accessible as soon as possible)
+~~To access the data , please open an [ORCID account](https://orcid.org/) and follow [these instructions](https://data.ru.nl/doc/help/helppages/visitor-manual/vm-request-access.html?14=). Please see the [FAQ section](https://data.ru.nl/doc/help/helppages/faq.html?20=) to solve common issues.
+The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchronized version is titled *Wearanize+_PlugNPlay_v1.0.zip*. If you still have trouble accessing the dataset (or have questions), please contact Niloy Sikder at niloy.sikder@donders.ru.nl, mentioning your ORCID ID.~~
 
 ## Dataset Contents (PlugNPlay)
 **Column descriptions:**
