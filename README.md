@@ -22,12 +22,12 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 2. 'Device': Name of the recording device. (Devices: Zmax, PSG, Empatica, ActivPAL; keys: Zmax, PSG, Emp, Activpal).
 3. 'NumOfSignals': Number of signals recorded in 'SignalData'.
 4. 'SignalLabel': List of signal names recorded by the device. Example: 'EEGL', 'EEGR', 'ACCX', etc..
-5. 'SignalStartDateTime': Start date and time of each signal's recording (%Y-%m-%d %H:%M:%S). Usually the same for all signals of a device. For Zmax and Mentalab, the start times are unreliable.
+5. 'SignalStartDateTime': Start date and time of each signal's recording (%Y-%m-%d %H:%M:%S). Usually, the same for all signals of a device. For Zmax and Mentalab, the start times are unreliable.
 6. 'SamplingRate': Sampling rate of each signal.
 7. 'SignalDurationSec': Duration of each signal in seconds.
 8. 'SignalLength': Length of each signal in data points.
-9. 'SignalMin': Minimum value of signals associated signal.
-10. 'SignalMax': Maximum value of signals associated signal.
+9. 'SignalMin': Minimum value of the associated signal.
+10. 'SignalMax': Maximum value of the associated signal.
 11. 'SignalType': Signal modalities (e.g., EEG, EMG).
 12. 'SignalUnit': Signal measurement unit.
 13. 'SignalData': Actual recorded data for each signal.
@@ -36,4 +36,5 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 
 ## Reference
 
-Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). *Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research*. Center for Open Science. DOI: 10.31219/osf.io/dth8y_v1
+Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). ***Wearanize+*: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research**. Center for Open Science. https://doi.org/10.31219/osf.io/dth8y_v2
+
