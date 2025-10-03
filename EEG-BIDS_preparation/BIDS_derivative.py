@@ -1,3 +1,13 @@
+"""
+https://github.com/Niloy333/Wearanize_plus
+Created by Niloy Sikder (scholar.google.com/citations?user=0ALk5j4AAAAJ&hl=en)
+Affiliations: PhD Candidate, Radboud University Medical Center, Donders Institute for Brain, Cognition and Behaviour, Nijmegen, The Netherlands &
+Scientific Assistant, Faculty of Technology and Bionics, Rhine-Waal University of Applied Sciences, Kleve, Germany.
+Contact: niloy.sikder@donders.ru.nl, niloy.sikder@hochschule-rhein-waal.de.
+Project Supervision: Matthias Krauledat, Paul Zerr, and Martin Dresler.
+Copyright (c) 2025 Niloy Sikder
+"""
+
 #%% csv to tsv BIDS
 
 import os
@@ -197,4 +207,5 @@ import pathlib
 out_path = Path(r"C:\3028005.01_Local\Wearanize+_dataset_v1.0\Wearanize+_PlugNPlay\derivatives\dataset_description.json")
 out_path.parent.mkdir(parents=True, exist_ok=True)
 out_path.write_text(json.dumps(eegfloss_dataset_description, indent=2, ensure_ascii=False), encoding="utf-8")
+
 print("Wrote:", out_path)
