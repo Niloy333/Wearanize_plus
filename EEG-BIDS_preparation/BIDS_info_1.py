@@ -1,8 +1,11 @@
-# -*- coding: utf-8 -*-
 """
-Created on Sun Aug 17 03:23:43 2025
-
-@author: nilsik
+https://github.com/Niloy333/Wearanize_plus
+Created by Niloy Sikder (scholar.google.com/citations?user=0ALk5j4AAAAJ&hl=en)
+Affiliations: PhD Candidate, Radboud University Medical Center, Donders Institute for Brain, Cognition and Behaviour, Nijmegen, The Netherlands &
+Scientific Assistant, Faculty of Technology and Bionics, Rhine-Waal University of Applied Sciences, Kleve, Germany.
+Contact: niloy.sikder@donders.ru.nl, niloy.sikder@hochschule-rhein-waal.de.
+Project Supervision: Matthias Krauledat, Paul Zerr, and Martin Dresler.
+Copyright (c) 2025 Niloy Sikder
 """
 
 #%% move EDF to dedicated folder
@@ -804,5 +807,6 @@ for f in files:
         new_path = os.path.join(dirname, new_fname)
         print(f'Renaming:\n{f}\n -> {new_path}\n')
         os.rename(f, new_path)
+
 
 #%%
