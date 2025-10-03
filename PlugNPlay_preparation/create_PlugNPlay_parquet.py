@@ -10,7 +10,6 @@ Copyright (c) 2025 Niloy Sikder
 
 Batch-sync and export PSG, Zmax, Empatica, and ActivPAL data to per-subject
 gzipped Parquet files, aligning to PSG epochs and attaching sleep scores.
-
 """
 #%% Imports:
 import os
