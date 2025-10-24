@@ -60,13 +60,9 @@ This work was supported by the Swiss National Science Foundation (SNF), a Vici F
 
 ## People
 **Principal investigator**: [Martin Dresler](https://scholar.google.com/citations?hl=en&user=Y-hAEQYAAAAJ&view_op=list_works&sortby=pubdate)
-
 **Data collection**: [Niloy Sikder](https://scholar.google.com/citations?hl=en&user=0ALk5j4AAAAJ&view_op=list_works&sortby=pubdate), Lieuwe Verkaar, [Anastasiya Paltarzhytskaya](https://scholar.google.com/citations?user=Tso2IDgAAAAJ&hl=en), Selin Acan, [Elena Krugliakova](https://scholar.google.com/citations?hl=en&user=fT12wToAAAAJ&view_op=list_works&sortby=pubdate)
-
 **Sleep-scoring**: [Leonore Bovy](https://scholar.google.com/citations?hl=en&user=ucXKHGsAAAAJ&view_op=list_works&sortby=pubdate)
-
 **Data preparation**: Niloy Sikder
-
 **Supervision**: [Matthias Krauledat](https://scholar.google.com/citations?hl=en&user=n9q-wxgAAAAJ&view_op=list_works&sortby=pubdate), Yevgenia Rosenblum](https://scholar.google.com/citations?hl=en&user=9pl_iyMAAAAJ&view_op=list_works&sortby=pubdate), [Paul Zerr](https://scholar.google.com/citations?hl=en&user=9CldqFoAAAAJ&view_op=list_works&sortby=pubdate)
 
 **For questions, comments, queries regarding data access, and interest in collaboration, please [contact Martin Dresler](mailto:martin.dresler@donders.ru.nl).**
