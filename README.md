@@ -10,11 +10,11 @@ The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy par
 
 The dataset is the outcome of a research project bearing the same name, carried out at the [Trigon Building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/trigon) of the [Donders Centre for Cognitive Neuroimaging](https://www.ru.nl/en/departments/institutes/donders-centre-for-cognitive-neuroimaging), Radboud University (Nijmegen, The Netherlands). The study was conducted by members of [Donders Sleep & Memory Lab](https://dreslerlab.org/), in collaboration with Radboud University Medical Center (Nijmegen, The Netherlands) and Hochschule Rhein-Waal (Kleve, Germany), between October 2023 and August 2024.
 
-For transparency and ease of use, the dataset has been released in two versions: [Wearanize+_Raw_v1.0](#wearanize+_raw_v1.0), which contains the raw, unfiltered data collected from participants, and [Wearanize+_PlugNPlay_v1.0](wearanize+_plugnplay_v1.0), which contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables. See [Access Instructions](#access_instructions) for a step-by-step guide to obtaining access to the dataset. This repository contains the scripts used to preprocess, synchronize, and create the PlugNPlay version. See [Script Descriptions](#script_descriptions) for more details.
+For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize+_raw_v1.0), which contains the raw, unfiltered data collected from participants, and [Wearanize+ PlugNPlay v1.0](wearanize+_plugnplay_v1.0), which contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables. See [Access Instructions](#access_instructions) for a step-by-step guide to obtaining access to the dataset. This repository contains the scripts used to preprocess, synchronize, and create the PlugNPlay version. See [Script Descriptions](#script_descriptions) for more details.
 
-## Wearanize+_Raw_v1.0
+## Wearanize+ Raw v1.0
 
-## Wearanize+_PlugNPlay_v1.0
+## Wearanize+ PlugNPlay v1.0
 
 This repository contains scripts to preprocess the raw data and perform preliminary analysis on the Wearanize+ dataset v1.0.
 For more details on the project, see [Wearanize+ Dataset v1.0 Publication](https://doi.org/10.31219/osf.io/dth8y_v3)
