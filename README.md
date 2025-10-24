@@ -23,7 +23,8 @@ The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchroni
 
 ## Devices and Modalities
 
-The following image shows different modalities recorded by the wearables used (recordings from the experimental devices are not a part of the dataset):
+The following image shows the positions of the mentioned devices and their recording modalities. <br>
+Recordings from the experimental devices are not a part of the dataset.
 
 <img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="500">
 
