@@ -11,6 +11,7 @@ ORCID: 0000-0002-9016-6105
 #%% Required Libraries
 import os
 import pyedflib # Tested on Version: 0.1.37
+import numpy as np
 
 #%%
 # Root directory of the PlugNPlay dataset:
@@ -44,22 +45,27 @@ idx = signal_labels.index(signal_name)
 
 # Read the time-series data:
 signal_data = sub_edf.readSignal(idx)
+print("PSG_F3 data has been read.")
+
+# The original signal data was stored in Float32, so convert it back to save space:
+signal_data = signal_data.astype(np.float32)
 
 # Get the corresponding manual sleep scores:
 idx = signal_labels.index('PSG_Manual_score')
-psg_scores = sub_edf.readSignal(idx)
+psg_scores = sub_edf.readSignal(idx).astype(np.int8)
+print("Manual scores has been read.")
 
 # Read all the channels' data and store them in a dictionary:
 all_signals = {}
 for i, label in enumerate(signal_labels):
-    all_signals[label] = sub_edf.readSignal(i)
+    all_signals[label] = sub_edf.readSignal(i).astype(np.float32)
 print("All channels' data has been read.")
 
 # Close the file after processing:
 sub_edf.close()
 
 #%% Read data from all subjects:
-# Caution: storing all signal data from all subjects will require a lot of memory space
+# Caution: storing all signals data from all subjects will require a lot of memory space
 
 # Listing the directories of all the EDF files in the dataset:
 edf_files = []
@@ -75,7 +81,7 @@ all_subs_data = {}
 for file_path in edf_files:
     filename = os.path.basename(file_path)
     
-    # Getting the subject ID:
+    # Getting the subject id:
     sub_id = filename.split("_")[0] #e.g.: sub-005
     print(f"Reading data from {sub_id}...")
     
@@ -89,7 +95,7 @@ for file_path in edf_files:
     for ch_name in ['PSG_F3', 'PSG_Manual_score']:
         try:
             idx = signal_labels.index(ch_name)
-            all_subs_data[f"{sub_id}_{ch_name}"] = edf.readSignal(idx)
+            all_subs_data[f"{sub_id}_{ch_name}"] = edf.readSignal(idx).astype(np.float32)
         except:
             print(f"\t{ch_name} was not found in {sub_id}")        
     
@@ -99,4 +105,3 @@ for file_path in edf_files:
 print("\nAll subjects' data was read.")
             
 #%%
-
