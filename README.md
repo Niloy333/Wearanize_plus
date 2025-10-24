@@ -16,9 +16,9 @@ The dataset is the outcome of a research project bearing the same name, carried 
 
 ## Devices and Modalities
 
-The following image shows different modalities recorded by the wearables used:
+The following image shows different modalities recorded by the wearables used (recordings form the experimental devices are not a part of the dataset):
 
-<img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="600">
+<img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="400">
 
 ## Wearanize+ Raw v1.0
 
