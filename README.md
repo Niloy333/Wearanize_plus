@@ -6,9 +6,9 @@
 
 ## Overview
 
-The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years, SD = 4.34; 89 females). Each participant’s sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer and automatically sleep-scored by [*USleep v2.0*](https://sleep.ai.ku.dk/). Both sets of scores are included in the dataset. For more details, see the [reference paper](#reference-paper).
+The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years, SD = 4.34; 89 females). Each participant's sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer and automatically sleep-scored by [*USleep v2.0*](https://sleep.ai.ku.dk/). Both sets of scores are included in the dataset. For more details, see the [reference paper](#reference-paper).
 
-For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize+_raw_v1.0), which contains the raw, unfiltered data collected from participants, and [Wearanize+ PlugNPlay v1.0](#wearanize+_plugnplay_v1.0), which contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables. See [Access Instructions](#access_instructions) for a step-by-step guide to obtaining access to the dataset. This repository contains the scripts used to preprocess, synchronize, and create the PlugNPlay version. See [Script Descriptions](#script_descriptions) for more details.
+For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize+_raw_v1.0) (contains the raw, unfiltered data collected from participants) and [Wearanize+ PlugNPlay v1.0](#wearanize+_plugnplay_v1.0) (contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables). See [Access Instructions](#access_instructions) for a step-by-step guide to obtaining access to the dataset. This repository contains the scripts used to preprocess, synchronize, and create the PlugNPlay version. See [Script Descriptions](#script_descriptions) for more details.
 
 The dataset can facilitate a range of applications, including device-specific validations of the three wearables, development of (device-specific) automatic sleep-stage scorers (autoscorers) based on the provided PSG-based sleep scores, methods for handling missing or corrupted data, and evaluation of alternative (as well as compound) sensor modalities for sleep scoring. It has already been used for developing Zmax-based autoscorers, such as [*ezscore*](https://github.com/coonwg1/ezscore) and [*u-sleep-w*](https://github.com/alitsaberi/zmax-datasets). It has been used to validate [an automatic Zmax–Somnoscreen synchronization method](https://github.com/Niloy333/Wearanize_plus/blob/base/automatic_synchronization/Zmax-Somnoscreen_auto_sync.m), and work is underway to automate Zmax–Empatica and Zmax–ActivPAL synchronization as well. One of our key objectives behind creating this dataset is to leverage these multimodal recordings to build robust, multi-wearable sleep-scoring models that approach PSG-grade performance while minimizing the impact of EEG artifacts.
 
@@ -29,38 +29,23 @@ The following image shows different modalities recorded by the wearables used (r
 
 ## Wearanize+ Raw v1.0
 
-This version/file contains the participant- and device-wise raw data collected in the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for mode details. 
+This version/file contains the participant- and device-wise raw data collected in the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for more details. 
 
 ## Wearanize+ PlugNPlay v1.0
 
-This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]*. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available and manual sleep scoring could be performed.
+This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]*. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
 
-The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for mode details.
+The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
 ## Script Descriptions
 
-## Dataset Contents (PlugNPlay)
-**Column descriptions:**
-1. 'SubjectID': Unique identifier for the subject.
-2. 'Device': Name of the recording device. (Devices: Zmax, PSG, Empatica, ActivPAL; keys: Zmax, PSG, Emp, Activpal).
-3. 'NumOfSignals': Number of signals recorded in 'SignalData'.
-4. 'SignalLabel': List of signal names recorded by the device. Example: 'EEGL', 'EEGR', 'ACCX', etc..
-5. 'SignalStartDateTime': Start date and time of each signal's recording (%Y-%m-%d %H:%M:%S). Usually, the same for all signals of a device. For Zmax and Mentalab, the start times are unreliable.
-6. 'SamplingRate': Sampling rate of each signal.
-7. 'SignalDurationSec': Duration of each signal in seconds.
-8. 'SignalLength': Length of each signal in data points.
-9. 'SignalMin': Minimum value of the associated signal.
-10. 'SignalMax': Maximum value of the associated signal.
-11. 'SignalType': Signal modalities (e.g., EEG, EMG).
-12. 'SignalUnit': Signal measurement unit.
-13. 'SignalData': Actual recorded data for each signal.
-14. 'SleepScoreEpochs': Number of 30-second epochs in associated sleep scores.
-15. 'SleepScores': Available sleep scores identified from the associated device's data.
 
 ## Ethical Statements
+
 This study was conducted in accordance with the Donders Centre for Cognitive Neuroimaging (DCCN) blanket approval, protocol ‘Imaging Human Cognition’ (NL45659.091.14), approved by METC Oost-Nederland (2014/288).
 
 ## Funding
+
 This work was supported by the Swiss National Science Foundation (SNF), a Vici Fellowship from the Dutch Research Council (NWO), and the European Union’s Horizon Europe Programme (HORIZON-MSCA-2021-PF-01-01) through a Marie Skłodowska-Curie Postdoctoral Fellowship (Grant No. 101066123, GlymphoSleep).
 
 ## Reference Paper
