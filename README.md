@@ -6,7 +6,7 @@
 
 ## Overview
 
-The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years, SD = 4.34; 89 females). Each participant’s sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer, and the scores are included in the dataset. For more details, see the [associated paper](#reference-paper).
+The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years, SD = 4.34; 89 females). Each participant’s sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer and automatically sleep-scored by [*USleep v2.0*](https://sleep.ai.ku.dk/). Both sets of scores are included in the dataset. For more details, see the [reference paper](#reference-paper).
 
 For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize+_raw_v1.0), which contains the raw, unfiltered data collected from participants, and [Wearanize+ PlugNPlay v1.0](#wearanize+_plugnplay_v1.0), which contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables. See [Access Instructions](#access_instructions) for a step-by-step guide to obtaining access to the dataset. This repository contains the scripts used to preprocess, synchronize, and create the PlugNPlay version. See [Script Descriptions](#script_descriptions) for more details.
 
@@ -14,27 +14,28 @@ The dataset can facilitate a range of applications, including device-specific va
 
 The dataset is the outcome of a research project bearing the same name, carried out at the [Trigon Building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/trigon) of the [Donders Centre for Cognitive Neuroimaging](https://www.ru.nl/en/departments/institutes/donders-centre-for-cognitive-neuroimaging), Radboud University (Nijmegen, The Netherlands). The study was conducted by members of [Donders Sleep & Memory Lab](https://dreslerlab.org/), in collaboration with Radboud University Medical Center (Nijmegen, The Netherlands) and Hochschule Rhein-Waal (Kleve, Germany), between October 2023 and August 2024.
 
-## Devices and Modalities
-
-The following image shows different modalities recorded by the wearables used (recordings form the experimental devices are not a part of the dataset):
-
-<img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="400">
-
-## Wearanize+ Raw v1.0
-
-This version/file contains data 
-
-## Wearanize+ PlugNPlay v1.0
-
-This repository contains scripts to preprocess the raw data and perform preliminary analysis on the Wearanize+ dataset v1.0.
-For more details on the project, see [Wearanize+ Dataset v1.0 Publication](https://doi.org/10.31219/osf.io/dth8y_v3)
-
 ## Access Instructions
 
 **Some recent changes in institutional policies have delayed the release of the dataset. Please be assured that we are actively working to publish it as soon as possible, while adhering to proper regulations and ensuring public access. We are amazed by the number of responses and requests we have received. As soon as things are settled on our end, we will outline the procedure for accessing the dataset on this page. In the meantime, we kindly request your patience.**
 
 ~~To access the data, please open an [ORCID account](https://orcid.org/) and follow [these instructions](https://data.ru.nl/doc/help/helppages/visitor-manual/vm-request-access.html?14=). Please see the [FAQ section](https://data.ru.nl/doc/help/helppages/faq.html?20=) to solve common issues.
 The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchronized version is titled *Wearanize+_PlugNPlay_v1.0.zip*. If you still have trouble accessing the dataset (or have questions), please contact Niloy Sikder at niloy.sikder@donders.ru.nl, mentioning your ORCID ID.~~
+
+## Devices and Modalities
+
+The following image shows different modalities recorded by the wearables used (recordings from the experimental devices are not a part of the dataset):
+
+<img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="500">
+
+## Wearanize+ Raw v1.0
+
+This version/file contains the participant- and device-wise raw data collected in the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for mode details. 
+
+## Wearanize+ PlugNPlay v1.0
+
+This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]*. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available and manual sleep scoring could be performed.
+
+The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for mode details.
 
 ## Script Descriptions
 
@@ -69,6 +70,8 @@ Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., 
 ## Citation
 
 If you use the dataset, please cite the reference paper using the **DOI: 10.31219/osf.io/dth8y_v3** and the dataset using the **DOI: TBA**. If you use the provided scripts, please cite the repository using the **DOI: 10.5281/zenodo.14892764**.
+
+[Read on ResearchGate](https://www.researchgate.net/publication/388542789_Wearanize_A_Multimodal_Dataset_for_Evaluating_Wearable_Technologies_in_Sleep_Research)
 
 ## People
 
