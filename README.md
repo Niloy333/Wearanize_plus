@@ -2,7 +2,7 @@
 
 # Wearanize plus (*Wearanize+*)
 
-**— A multimodal dataset with wearable-based overnight sleep recordings**
+**—A multimodal dataset with wearable-based overnight sleep recordings**
 
 ## Overview
 
