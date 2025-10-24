@@ -8,6 +8,7 @@ Contact: niloy.sikder@donders.ru.nl, niloy.sikder@hochschule-rhein-waal.de
 Google Scholar: https://scholar.google.com/citations?user=0ALk5j4AAAAJ&hl=en
 ORCID: 0000-0002-9016-6105
 """
+
 #%% Required Libraries
 import os
 import pyedflib # Tested on Version: 0.1.37
