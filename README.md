@@ -43,19 +43,19 @@ The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Dat
 
 ### read_PlugNPlay_EDF.m
 
-### PlugNPlay_preparation/create_PlugNPlay_parquet.py
+### PlugNPlay_preparation / create_PlugNPlay_parquet.py
 
-### PlugNPlay_preparation/parquet_to_EDF.py
+### PlugNPlay_preparation / parquet_to_EDF.py
 
-### EEG-BIDS_preparation/BIDS_derivative.py
+### EEG-BIDS_preparation / BIDS_derivative.py
 
-### EEG-BIDS_preparation/BIDS_info_1.py
+### EEG-BIDS_preparation / BIDS_info_1.py
 
-### automatic_synchronization/Zmax-Somnoscreen_auto_sync.m
+### automatic_synchronization / Zmax-Somnoscreen_auto_sync.m
 
-### manual_synchronization/Zmax-Somnoscreen_manual_sync.m
+### manual_synchronization / Zmax-Somnoscreen_manual_sync.m
 
-### manual_synchronization/Zmax-Empatica-Activpal_manual_sync.m
+### manual_synchronization / Zmax-Empatica-Activpal_manual_sync.m
 
 ## Ethical Statements
 
