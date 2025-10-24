@@ -91,13 +91,12 @@ This work was supported by the Swiss National Science Foundation (SNF), a Vici F
 
 ## Reference Paper
 
-Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). ***Wearanize+*: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research**. Center for Open Science. https://doi.org/10.31219/osf.io/dth8y_v3
+Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). ***Wearanize+*: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research**. Center for Open Science. https://doi.org/10.31219/osf.io/dth8y_v3<br>
+[Read on ResearchGate](https://www.researchgate.net/publication/388542789_Wearanize_A_Multimodal_Dataset_for_Evaluating_Wearable_Technologies_in_Sleep_Research)
 
 ## Citation
 
 If you use the dataset, please cite the reference paper using the **DOI: 10.31219/osf.io/dth8y_v3** and the dataset using the **DOI: TBA**. If you use the provided scripts, please cite the repository using the **DOI: 10.5281/zenodo.14892764**.
-
-[Read on ResearchGate](https://www.researchgate.net/publication/388542789_Wearanize_A_Multimodal_Dataset_for_Evaluating_Wearable_Technologies_in_Sleep_Research)
 
 ## People
 
