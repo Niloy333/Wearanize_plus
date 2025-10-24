@@ -30,17 +30,22 @@ The following image shows the positions of the mentioned devices and their recor
 
 ## Dataset Versions
 
-For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize-raw-v10) (contains the raw, unfiltered data collected from participants) and [Wearanize+ PlugNPlay v1.0](#wearanize-plugnplay-v10) (contains a curated, streamlined version after initial preprocessing of the raw data and manual synchronization of different wearables).
+For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize-raw-v10) and [Wearanize+ PlugNPlay v1.0](#wearanize-plugnplay-v10). PlugNPlay would be the ideal version for most projects, while the Raw version allows tracing back to the original data and may provide the opportunity for further analysis. Here are the differences in their contents:
 
 ### Wearanize+ Raw v1.0
 
-This version/file contains the participant- and device-wise raw data collected in the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for more details. 
+This version/file contains the raw, unfiltered data collected from the participants of the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for more details.
 
 ### Wearanize+ PlugNPlay v1.0
 
-This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]*. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed. 
+This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]* and stored with the Float32 datatype. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed. 
 
-See subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. In most cases, the channel names were kept consistent with the names provided by the associated device. However, sometimes they were modified for compatibility or clarity. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced with *channel_b*.
+In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. A description of all the channels' names has been provided below. See subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels.
+
+
+
+
+*[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced with *channel_b*. For ease of use, here are the channels 
 
 Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
