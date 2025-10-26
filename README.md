@@ -51,7 +51,7 @@ In most cases, the channel names were kept consistent with the names provided by
 |---|---|---:|---|---|
 | ActivPal_ACCX | Accelerometer X axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCY | Accelerometer Y axis | ⓖ | ActivPAL | 20 |
-| ActivPal_ACCZ | ActivPal accelerometer Z axis | ⓖ | ActivPAL | 20 |
+| ActivPal_ACCZ | Accelerometer Z axis | ⓖ | ActivPAL | 20 |
 | Emp_ACCX | Accelerometer X axis | ⓖ/64 | Empatica E4 | 32 |
 | Emp_ACCY | Accelerometer Y axis | ⓖ/64 | Empatica E4 | 32 |
 | Emp_ACCZ | Accelerometer Z axis | ⓖ/64 | Empatica E4 | 32 |
@@ -64,9 +64,9 @@ In most cases, the channel names were kept consistent with the names provided by
 | PSG_ACCX | Accelerometer X axis | mⓖ | Mentalab | 20 |
 | PSG_ACCY | Accelerometer Y axis | mⓖ | Mentalab | 20 |
 | PSG_ACCZ | Accelerometer Z axis | mⓖ | Mentalab | 20 |
-| PSG_C3 | EEG channel C3 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_C3 | EEG channel C3 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_C3:A2 | EEG channel C3 referenced to A2 | µV | SOMNOscreen | 256 |
-| PSG_C4 | EEG channel C4 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_C4 | EEG channel C4 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_C4:A1 | EEG channel C4 referenced to A1 | µV | SOMNOscreen | 256 |
 | PSG_CP1 | EEG channel CP1 | µV | Mentalab | 250 |
 | PSG_CP2 | EEG channel CP2 | µV | Mentalab | 250 |
@@ -81,10 +81,10 @@ In most cases, the channel names were kept consistent with the names provided by
 | PSG_EMG_plus | EMG channel 2 | µV | SOMNOscreen | 256 |
 | PSG_EMG1 | EMG channel 1 | µV | Mentalab | 250 |
 | PSG_EMG2 | EMG channel 2 | µV | Mentalab | 250 |
-| PSG_EOG1 | EOG channel 1 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_EOG1 | EOG channel 1 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_EOG1:A1 | EOG channel 1 referenced to A1 | µV | SOMNOscreen | 256 |
 | PSG_EOG1:A2 | EOG channel 1 referenced to A2 | µV | SOMNOscreen | 256 |
-| PSG_EOG2 | EOG channel 2 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_EOG2 | EOG channel 2 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_EOG2:A1 | EOG channel 2 referenced to A1 | µV | SOMNOscreen | 256 |
 | PSG_EOG2:A2 | EOG channel 2 referenced to A2 | µV | SOMNOscreen | 256 |
 | PSG_F3 | EEG channel F3 | µV | SOMNOscreen | 256 |
@@ -107,21 +107,21 @@ In most cases, the channel names were kept consistent with the names provided by
 | PSG_MAGY | Magnetometer Y axis | µT | Mentalab | 20 |
 | PSG_MAGZ | Magnetometer Z axis | µT | Mentalab | 20 |
 | PSG_Move. | Movement info | mⓖ | SOMNOscreen | 4 |
-| PSG_O1 | EEG channel O1 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_O1 | EEG channel O1 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_O1:A2 | EEG channel O1 referenced to A2 | µV | SOMNOscreen | 256 |
-| PSG_O2 | EEG channel O2 | µV | SOMNOscreen, Mentalab | 256, 250 |
+| PSG_O2 | EEG channel O2 | µV | SOMNOscreen,<br>Mentalab | 256,<br>250 |
 | PSG_O2:A1 | EEG channel O2 referenced to A1 | µV | SOMNOscreen | 256 |
 | PSG_Oz | EEG channel Oz | µV | Mentalab | 250 |
 | PSG_P3 | EEG channel P3 | µV | Mentalab | 250 |
 | PSG_P4 | EEG channel P4 | µV | Mentalab | 250 |
 | PSG_P7 | EEG channel P7 | µV | Mentalab | 250 |
 | PSG_P8 | EEG channel P8 | µV | Mentalab | 250 |
-| PSG_Pos. | position info<sup>ⓟ</sup> | Unitless | SOMNOscreen | 4 |
+| PSG_Pos. | Body position info<sup>ⓟ</sup> | Unitless | SOMNOscreen | 4 |
 | PSG_Pz | EEG channel Pz | µV | Mentalab | 250 |
 | PSG_T7 | EEG channel T7 | µV | Mentalab | 250 |
 | PSG_T8 | EEG channel T8 | µV | Mentalab | 250 |
-| PSG_Manual_score | PSG-based manually-identified sleep scores<sup>ⓢ</sup> | Unitless | N/A | 1/30 |
-| PSG_USleep_score | PSG-based automatic sleep stages<sup>ⓢ</sup><br>identified by Usleep v2.0 | Unitless | N/A | 1/30 |
+| PSG_Manual_score | Manually-identified sleep scores<sup>ⓢ</sup> from PSG| Unitless | N/A | 1/30 |
+| PSG_USleep_score | Automatic sleep scores<sup>ⓢ</sup> identified by Usleep v2.0 | Unitless | N/A | 1/30 |
 | Zmax_ACCX | Accelerometer X axis | ⓖ | Zmax | 256 |
 | Zmax_ACCY | Accelerometer Y axis | ⓖ | Zmax | 256 |
 | Zmax_ACCZ | Accelerometer Z axis | ⓖ | Zmax | 256 |
@@ -131,7 +131,10 @@ In most cases, the channel names were kept consistent with the names provided by
 | Zmax_OXY_IR_AC | Forehead PPG | Unitless | Zmax | 256 |
 | Zmax_OXY_IR_DC | Oximetry IR DC component | Unitless | Zmax | 256 |
 
-> <sup>$</sup>Somnoscreen electrodes were placed following the [10–20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)), Mentalab electrodes were placed following the [10–10](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)#/media/File:EEG_10-10_system_with_additional_information.svg) system.<br>ⓖ Gravity (m/s<sup>2</sup>).<br><sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br><sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.
+> <sup>$</sup>Electrode placement: Somnoscreen: [10–20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)), Mentalab: [10–10 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)#/media/File:EEG_10-10_system_with_additional_information.svg).<br>
+ⓖ: Gravity (m/s<sup>2</sup>).<br>
+<sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br>
+<sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.
 
 Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
