@@ -54,6 +54,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 ### `read_PlugNPlay_EDF.py`
 
 - Provides example code to read individual EDF files and extract information from multiple EDF files using Python.
+- Note: The raw signals are stored in the Float32 datatype. However, they are usually read in Float64. To save space, convert them to Float32.
 - Note: Storing raw signals from all EDF files simultaneously requires substantial memory.
 
 ### `read_PlugNPlay_EDF.m`
