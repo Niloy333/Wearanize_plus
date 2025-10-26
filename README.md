@@ -37,11 +37,11 @@ The following image shows the positions of the mentioned devices and their recor
 
 For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize-raw-v10) and [Wearanize+ PlugNPlay v1.0](#wearanize-plugnplay-v10). PlugNPlay would be the ideal version for most projects, while the Raw version allows tracing back to the original data and may provide the opportunity for further analysis. Here are the differences in their contents:
 
-### Wearanize+ Raw v1.0
+### *Wearanize+ Raw v1.0*
 
 This version/file contains the raw, unfiltered data collected from the participants of the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for more details.
 
-### Wearanize+ PlugNPlay v1.0
+### *Wearanize+ PlugNPlay v1.0*
 
 This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]* and stored with the Float32 datatype (if they are read in Float64, convert them back to Float32 to save space). The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
 
@@ -101,9 +101,9 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | ActivPal_ACCX | Accelerometer X axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCY | Accelerometer Y axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCZ | Accelerometer Z axis | ⓖ | ActivPAL | 20 |
-| Emp_ACCX | Accelerometer X axis | ⓖ/64 | Empatica E4 | 32 |
-| Emp_ACCY | Accelerometer Y axis | ⓖ/64 | Empatica E4 | 32 |
-| Emp_ACCZ | Accelerometer Z axis | ⓖ/64 | Empatica E4 | 32 |
+| Emp_ACCX | Accelerometer X axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
+| Emp_ACCY | Accelerometer Y axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
+| Emp_ACCZ | Accelerometer Z axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
 | Emp_BVP | PPG | Unitless | Empatica E4 | 64 |
 | Emp_EDA | Electrodermal activity | μS | Empatica E4 | 4 |
 | Emp_HR | Mean heart rate derived from BVP | bpm | Empatica E4 | 1 |
@@ -169,7 +169,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | PSG_Pz | EEG channel Pz | µV | Mentalab | 250 |
 | PSG_T7 | EEG channel T7 | µV | Mentalab | 250 |
 | PSG_T8 | EEG channel T8 | µV | Mentalab | 250 |
-| PSG_Manual_score | Manually-identified sleep scores<sup>ⓢ</sup> from PSG| Unitless | N/A | 1/30 |
+| PSG_Manual_score | Manually-identified sleep scores<sup>ⓢ</sup> from PSG data | Unitless | N/A | 1/30 |
 | PSG_USleep_score | Automatic sleep scores<sup>ⓢ</sup> identified by Usleep v2.0 | Unitless | N/A | 1/30 |
 | Zmax_ACCX | Accelerometer X axis | ⓖ | Zmax | 256 |
 | Zmax_ACCY | Accelerometer Y axis | ⓖ | Zmax | 256 |
