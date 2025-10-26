@@ -1,5 +1,5 @@
 [![Dataset DOI](https://img.shields.io/badge/Dataset_DOI-TBA-blue)](https://doi.org/TBA)
-[![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.31219%2Fosf.io%2Fdth8y_v3-blue)](https://doi.org/10.31219/osf.io/dth8y_v3)
+[![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.31219%2Fosf.io%2Fdth8y__v3-blue)](https://doi.org/10.31219/osf.io/dth8y_v3)
 [![Repository DOI](https://img.shields.io/badge/Repository_DOI-10.5281%2Fzenodo.14892764-blue)](https://doi.org/10.5281/zenodo.14892764)
 <!-- [![DOI](https://zenodo.org/badge/925334641.svg)](https://doi.org/10.5281/zenodo.14892764) -->
 ![Repo size](https://img.shields.io/github/repo-size/Niloy333/Wearanize_plus)
