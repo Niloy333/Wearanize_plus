@@ -180,7 +180,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | Zmax_OXY_IR_AC | Forehead PPG | Unitless | Zmax | 256 |
 | Zmax_OXY_IR_DC | Oximetry IR DC component | Unitless | Zmax | 256 |
 
-> <sup>$</sup>Electrode placement: Somnoscreen: [10–20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)), Mentalab: [10–10 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)#/media/File:EEG_10-10_system_with_additional_information.svg).<br>
+> <sup>$</sup>Electrode placement: SOMNOscreen: [10–20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)), Mentalab: [10–10 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)#/media/File:EEG_10-10_system_with_additional_information.svg).<br>
 ⓖ: Gravity (m/s<sup>2</sup>).<br>
 <sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br>
 <sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.
