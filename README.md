@@ -9,6 +9,8 @@
 
 **—A multimodal dataset with wearable-based overnight sleep recordings**
 
+Table of Contents: [Overview](#overview) | [Access Instructions](#access-instructions) | [Devices and Modalities](#devices-and-modalities) | [Dataset Versions](#dataset-versions) | [Script Descriptions](#script-descriptions) | [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) | [Ethical Statements](#ethical-statements) | [Funding](#funding) | [Reference Paper](#reference-paper) | [Citation](#citation) | [People](#people)
+
 ## Overview
 
 The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years, SD = 4.34; 89 females). Each participant's sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](https://empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer and automatically sleep-scored by [*USleep v2.0*](https://sleep.ai.ku.dk/). Both sets of scores are included in the dataset. For more details, see the [reference paper](#reference-paper). 
