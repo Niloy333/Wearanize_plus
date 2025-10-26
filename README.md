@@ -101,9 +101,9 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | ActivPal_ACCX | Accelerometer X axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCY | Accelerometer Y axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCZ | Accelerometer Z axis | ⓖ | ActivPAL | 20 |
-| Emp_ACCX | Accelerometer X axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
-| Emp_ACCY | Accelerometer Y axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
-| Emp_ACCZ | Accelerometer Z axis | 2<sup>-6</sup> ⓖ | Empatica E4 | 32 |
+| Emp_ACCX | Accelerometer X axis | ⓖ/64 | Empatica E4 | 32 |
+| Emp_ACCY | Accelerometer Y axis | ⓖ/64 | Empatica E4 | 32 |
+| Emp_ACCZ | Accelerometer Z axis | ⓖ/64 | Empatica E4 | 32 |
 | Emp_BVP | PPG | Unitless | Empatica E4 | 64 |
 | Emp_EDA | Electrodermal activity | μS | Empatica E4 | 4 |
 | Emp_HR | Mean heart rate derived from BVP | bpm | Empatica E4 | 1 |
