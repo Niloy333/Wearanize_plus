@@ -47,6 +47,54 @@ This version/file contains a processed, synchronized, and truncated version of t
 
 In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. A description of all the channels' names has been provided below. See subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced with *channel_b*.
 
+| Channel Name | Description | Unit | Sampling Frequency (Hz) |
+|---|---|---:|---|
+| Zmax_ACCX | Zmax accelerometer X axis | g | 256 |
+| Zmax_ACCY | Zmax accelerometer Y axis | g | 256 |
+| Zmax_ACCZ | Zmax accelerometer Z axis | g | 256 |
+| Zmax_EEGL | Zmax EEG Left channel | µV | 256 |
+| Zmax_EEGR | Zmax EEG Right channel | µV | 256 |
+| Zmax_NOISE | Zmax noise channel | Unitless | 256 |
+| Zmax_OXY_IR_AC | Zmax Forehead PPG | Unitless | 256 |
+| Zmax_OXY_IR_DC | Zmax Oximetry IR DC component | Unitless | 256 |
+| PSG_A1 | PSG EEG channel A1 | µV | 256 |
+| PSG_A2 | PSG EEG channel A2 | µV | 256 |
+| PSG_ACCX | Mentalab accelerometer X axis | mg | 20 |
+| PSG_ACCY | Mentalab accelerometer Y axis  | mg | 20 |
+| PSG_ACCZ | Mentalab accelerometer Z axis  | mg | 20 |
+| PSG_C3 | PSG EEG channel C3 | µV | 256^ⓢ / 250^ⓜ |
+| PSG_C4 | PSG EEG channel C4 | µV | 256^$ / 250^m |
+| PSG_EOG1 | PSG EOG channel 1 | µV | 256^$ / 250^m |
+| PSG_EOG2 | PSG EOG channel 2 | µV | 256^$ / 250^m |
+| PSG_F3 | SOMNOscreen EEG channel C3 | µV | 256.0 |
+| PSG_F4 | SOMNOscreen EEG channel C3 | µV | 256.0 |
+| PSG_F7 | Mentalab EEG channel C3 | µV | 250.0 |
+| PSG_F8 | Mentalab EEG channel C3 | µV | 250.0 |
+| PSG_GND | MISC | Unitless | 256.0 |
+| PSG_HEOG | EOG | µV | 256.0 |
+| PSG_M1 | EEG | µV | 256.0 |
+| PSG_M2 | EEG | µV | 256.0 |
+| PSG_O1 | EEG | µV | 256.0^$/250.0^m |
+| PSG_O2 | EEG | µV | 256.0^$/250.0^m |
+| PSG_P3 | EEG | µV | 256.0 |
+| PSG_P4 | EEG | µV | 256.0 |
+| PSG_P7 | EEG | µV | 256.0 |
+| PSG_P8 | EEG | µV | 250.0 |
+| PSG_Pos. | POS | position | 4.0 |
+| PSG_Pz | EEG | µV | 250.0 |
+| PSG_T7 | EEG | µV | 250.0 |
+| PSG_T8 | EEG | µV | 250.0 |
+| PSG_USleep_score | MISC | Unitless | 0.03333333333333333 |
+| Emp_ACCX | ACCEL | g/16 | 32.0 |
+| Emp_ACCY | ACCEL | g/16 | 32.0 |
+| Emp_ACCZ | ACCEL | g/16 | 32.0 |
+| Emp_BVP | PPG | Unitless | 64.0 |
+| Emp_EDA | GSR | µS | 4.0 |
+| Emp_HR | MISC | bpm | 1.0 |
+| Emp_TEMP | TEMP | °C | 4.0 |
+| ActivPal_ACCX | ACCEL | g | 20.0 |
+| ActivPal_ACCY | ACCEL | g | 20.0 |
+| ActivPal_ACCZ | ACCEL | g | 20.0 |
 
 
 
