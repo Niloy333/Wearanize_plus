@@ -1,4 +1,9 @@
+https://img.shields.io/badge/Dataset_DOI-TBA-blue
+https://img.shields.io/badge/Paper_DOI-10.31219/osf.io/dth8y_v3-blue
+https://img.shields.io/badge/Repository_DOI-10.5281/zenodo.14892764-blue
 [![DOI](https://zenodo.org/badge/925334641.svg)](https://doi.org/10.5281/zenodo.14892764)
+![Repo size](https://img.shields.io/github/repo-size/Niloy333/Wearanize_plus)
+![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus)
 
 # Wearanize plus (*Wearanize+*)
 
@@ -38,14 +43,14 @@ This version/file contains the raw, unfiltered data collected from the participa
 
 ### Wearanize+ PlugNPlay v1.0
 
-This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]* and stored with the Float32 datatype. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed. 
+This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single EDF file, preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_name]_[channel_name]* and stored with the Float32 datatype (if they are read in Float64, convert them back to Float32 to save space). The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
 
-In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. A description of all the channels' names has been provided below. See subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels.
-
-
+In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. A description of all the channels' names has been provided below. See subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced with *channel_b*.
 
 
-*[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced with *channel_b*. For ease of use, here are the channels 
+
+
+
 
 Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
@@ -53,13 +58,12 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 
 ### `read_PlugNPlay_EDF.py`
 
-- Provides example code to read individual EDF files and extract information from multiple EDF files using Python.
-- Note: The raw signals are stored in the Float32 datatype. However, they are usually read in Float64. To save space, convert them to Float32.
+- Provides example code to read individual EDF files and extract information from multiple EDF files of the PlugNPlay version using Python.
 - Note: Storing raw signals from all EDF files simultaneously requires substantial memory.
 
 ### `read_PlugNPlay_EDF.m`
 
-- Provides example code to read individual EDF files and extract information from multiple EDF files using MATLAB.
+- Provides example code to read individual EDF files and extract information from multiple EDF files of the PlugNPlay version using MATLAB.
 - Note: Storing raw signals from all EDF files simultaneously requires substantial memory.
 
 ### `PlugNPlay_preparation / create_PlugNPlay_parquet.py`
