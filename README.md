@@ -67,6 +67,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 
 - Contains the codes used to create the PlugNPlay version from the raw version of the dataset.
 - The PlugNPlay version was first generated in Parquet format, storing data as Pandas DataFrames for efficient processing.
+- The Parquet files are also available in the data repository as *Wearanize+ PlugNPlay Parquet v1.0*. If needed, they can serve as alternatives of the EDF files in *Wearanize+ PlugNPlay v1.0*. More information on these files and their operating instructions are avaialble in `extra_scripts / read_PlugNPlay.py` and `extra_scripts / read_PlugNPlay.m`.
 
 ### `PlugNPlay_preparation / parquet_to_EDF.py`
 
