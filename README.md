@@ -204,7 +204,7 @@ Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., 
 
 If you use the dataset in your work, please cite <br>
 the reference paper using the DOI: **10.31219/osf.io/dth8y_v3** and <br>
-the dataset using the DOI: TBA. <br>
+the dataset using the DOI: **10.34973/j6jf-9e62 (Not available yet)**. <br>
 
 If you use the provided scripts, please cite the repository using the DOI: **10.5281/zenodo.14892764**.
 
