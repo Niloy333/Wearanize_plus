@@ -54,7 +54,7 @@ In most cases, the channel names were kept consistent with the names provided by
 
 Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
-`Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab. Consequently, the PSG channel names differ from recordings acquired with Somnoscreen (for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings and sampling rates.`
+> Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab. Consequently, the PSG channel names differ from recordings acquired with Somnoscreen (for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings and sampling rates.`
 
 ## Script Descriptions
 
