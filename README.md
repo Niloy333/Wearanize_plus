@@ -55,7 +55,7 @@ In most cases, the channel names were kept consistent with the names provided by
 Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
 
 > [!IMPORTANT]
-> **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab. Consequently, the PSG channel names differ from recordings acquired with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings and sampling rates.**
+> **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab, and their channel names differ from those collected with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings and sampling rates.**
 
 ## Script Descriptions
 
@@ -69,36 +69,36 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 - Provides example code to read individual EDF files and extract information from multiple EDF files of the PlugNPlay version using MATLAB.
 - Note: Storing raw signals from all EDF files simultaneously requires substantial memory.
 
-### `PlugNPlay_preparation / create_PlugNPlay_parquet.py`
+### `PlugNPlay_preparation//create_PlugNPlay_parquet.py`
 
 - Contains the codes used to create the PlugNPlay version from the raw version of the dataset.
 - The PlugNPlay version was first generated in Parquet format, storing data as Pandas DataFrames for efficient processing.
 - The Parquet files are also available in the data repository as *Wearanize+ PlugNPlay Parquet v1.0*. If needed, they can serve as alternatives to the EDF files in *Wearanize+ PlugNPlay v1.0*. More information and usage instructions of these files are available in `extra_scripts / read_PlugNPlay.py` and `extra_scripts / read_PlugNPlay.m`.
 
-### `PlugNPlay_preparation / parquet_to_EDF.py`
+### `PlugNPlay_preparation//parquet_to_EDF.py`
 
 - Contains the scripts used to convert the Parquet files into EDF format while preserving all relevant signal information and metadata.
 
-### `EEG-BIDS_preparation / BIDS_derivative.py`
+### `EEG-BIDS_preparation//BIDS_derivative.py`
 
 - Prepares the EEG-BIDS–compatible derivative dataset containing global metadata and structure definitions.
 
-### `EEG-BIDS_preparation / BIDS_info_1.py`
+### `EEG-BIDS_preparation//BIDS_info_1.py`
 
 - Prepares the EEG-BIDS–compatible dataset with local (file-specific) metadata and participant-level information.
 
-### `automatic_synchronization / Zmax-Somnoscreen_auto_sync.m`
+### `automatic_synchronization//Zmax-Somnoscreen_auto_sync.m`
 
 - Provides MATLAB code to automatically synchronize simultaneously recorded overnight sleep data using the Zmax headband and SOMNOscreen plus PSG devices.
 - To apply this script to new data, organize the input files (Zmax recording, SOMNOscreen plus recording, and Lights Out/Lights On moments from Zmax) in the same structure as in **Wearanize+ Raw v1.0**, and update the input–output directories at the beginning of the script.
 - See Appendix 1 of the [reference paper](#reference-paper) for more details.
 
-### `manual_synchronization / Zmax-Somnoscreen_manual_sync.m`
+### `manual_synchronization//Zmax-Somnoscreen_manual_sync.m`
 
 - Contains MATLAB code for manual/visual synchronization of Zmax and SOMNOscreen plus recordings based on their respective accelerometer and movement signals.
 - See Section 2.3.3 of the [reference paper](#reference-paper) for more details.
 
-### `manual_synchronization / Zmax-Empatica-Activpal_manual_sync.m`
+### `manual_synchronization//Zmax-Empatica-Activpal_manual_sync.m`
 
 - Contains MATLAB code for manual/visual synchronization of Zmax recordings with Empatica E4 and ActivPAL data, based on their respective accelerometer outputs.
 
