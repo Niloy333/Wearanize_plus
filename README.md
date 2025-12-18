@@ -26,10 +26,7 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-**Some recent changes in institutional policies have delayed the release of the dataset. Please be assured that we are actively working to publish it as soon as possible, while adhering to proper regulations and ensuring public access. We are amazed by the number of responses and requests we have received. As soon as things are settled on our end, we will outline the procedure for accessing the dataset on this page. In the meantime, we request your patience.**
-
-~~To access the data, please open an [ORCID account](https://orcid.org/) and follow [these instructions](https://data.ru.nl/doc/help/helppages/visitor-manual/vm-request-access.html?14=). Please see the [FAQ section](https://data.ru.nl/doc/help/helppages/faq.html?20=) to solve common issues.
-The published dataset version is titled *Wearanize+_v1.0.zip*, and the synchronized version is titled *Wearanize+_PlugNPlay_v1.0.zip*. If you still have trouble accessing the dataset (or have questions), please contact Niloy Sikder at niloy.sikder@donders.ru.nl, mentioning your ORCID ID.~~
+The [Wearanize+ dataset](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) is hosted on the Radboud Data Repository (RDR) and is available for scientific research use upon signing a Data Use Agreement (DUA). To request access, download the DUA template ([Microsoft Word](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA.docx) or [editable PDF](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA_with_editable_fields.pdf)), complete the sections on recipient information, (briefly) state your research plan, and send the filled-out form to Martin Dresler via [email](mailto:martin.dresler@donders.ru.nl). Access will be granted once the DUA has been fully signed by all parties.
 
 ## Devices and Modalities
 
@@ -211,7 +208,7 @@ Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., 
 
 If you use the dataset in your work, please cite <br>
 the reference paper using the DOI: **10.31219/osf.io/dth8y_v3** and <br>
-the dataset using the DOI: **10.34973/j6jf-9e62 (Not available yet)**. <br>
+the dataset using the DOI: **10.34973/j6jf-9e62**. <br>
 
 If you use the provided scripts, please cite the repository using the DOI: **10.5281/zenodo.14892764**.
 
