@@ -1,4 +1,4 @@
-[![Dataset DOI](https://img.shields.io/badge/Dataset_DOI-TBA-blue)](https://doi.org/TBA)
+[![Dataset DOI](https://img.shields.io/badge/Dataset_DOI-TBA-blue)](https://doi.org/10.34973/j6jf-9e62)
 [![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.31219%2Fosf.io%2Fdth8y__v3-blue)](https://doi.org/10.31219/osf.io/dth8y_v3)
 [![Repository DOI](https://img.shields.io/badge/Repository_DOI-10.5281%2Fzenodo.14892764-blue)](https://doi.org/10.5281/zenodo.14892764)
 <!-- [![DOI](https://zenodo.org/badge/925334641.svg)](https://doi.org/10.5281/zenodo.14892764)-->
