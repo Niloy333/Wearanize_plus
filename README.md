@@ -1,4 +1,4 @@
-[![Dataset DOI](https://img.shields.io/badge/Dataset_DOI-TBA-blue)](https://doi.org/10.34973/j6jf-9e62)
+[![Dataset DOI](https://img.shields.io/badge/Dataset%20DOI-10.34973%2Fj6jf--9e62-blue)](https://doi.org/10.34973/j6jf-9e62)
 [![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.31219%2Fosf.io%2Fdth8y__v3-blue)](https://doi.org/10.31219/osf.io/dth8y_v3)
 [![Repository DOI](https://img.shields.io/badge/Repository_DOI-10.5281%2Fzenodo.14892764-blue)](https://doi.org/10.5281/zenodo.14892764)
 <!-- [![DOI](https://zenodo.org/badge/925334641.svg)](https://doi.org/10.5281/zenodo.14892764)-->
@@ -6,7 +6,6 @@
 ![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus)
 <!--[![Repository size](https://img.shields.io/github/repo-size/Niloy333/Wearanize_plus?cacheSeconds=3600)](https://github.com/Niloy333/Wearanize_plus)
 [![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus?cacheSeconds=3600)](https://github.com/Niloy333/Wearanize_plus/commits) -->
-
 
 # Wearanize plus (*Wearanize+*)
 
@@ -26,7 +25,7 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-The [Wearanize+ dataset](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) is hosted on the Radboud Data Repository (RDR) and is available for research upon signing a Data Use Agreement (DUA). To request access, download the DUA template ([Microsoft Word](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA.docx) or [editable PDF](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA_with_editable_fields.pdf)), complete the sections on recipient information, (briefly) state your research plan, and send the filled-out form to [Prof. Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl). Access will be granted once the DUA has been fully signed by all parties.
+The Wearanize+ dataset is hosted on the Radboud Data Repository (RDR) in [this collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) and is available for academic research upon signing a Data Use Agreement (DUA). To request access, download the DUA template ([Microsoft Word](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA.docx) or [editable PDF](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA_with_editable_fields.pdf)), complete the sections on recipient information, (briefly) state your research plan, and send the filled-out form to [Prof. Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl). Access will be granted once the DUA has been fully signed by all parties.
 
 ## Devices and Modalities
 
@@ -206,11 +205,44 @@ Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., 
 
 ## Citation
 
-If you use the dataset in your work, please cite <br>
-the reference paper using the DOI: **10.31219/osf.io/dth8y_v3** and <br>
-the dataset using the DOI: **10.34973/j6jf-9e62**. <br>
+If you use the Wearanize+ dataset, please cite the reference paper as:
 
-If you use the provided scripts, please cite the repository using the DOI: **10.5281/zenodo.14892764**.
+```bibtex
+@article{sikder2025wearanizeplus,
+  title     = {Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research},
+  author    = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tania and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and Zerr, Paul},
+  journal   = {OSF Preprints},
+  year      = {2025},
+  doi       = {10.31219/osf.io/dth8y_v3},
+  url       = {https://doi.org/10.31219/osf.io/dth8y_v3},
+}
+```
+
+and the dataset as:
+
+```
+@dataset{sikder2025wearanizeplus_dataset,
+  title     = {Wearanize+: A multimodal dataset (N=130) with wearable-based at-home overnight sleep recordings},
+  author    = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tania and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and Zerr, Paul},
+  publisher = {Radboud Data Repository},
+  year      = {2025},
+  doi       = {10.34973/j6jf-9e62},
+  url       = {https://doi.org/10.34973/j6jf-9e62},
+}
+```
+
+If you use the provided scripts, please cite the GitHub repository as:
+
+```
+@software{sikder2025wearanizeplus,
+  author    = {Sikder, Niloy},
+  title     = {Wearanize_plus},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.14892764},
+  url       = {https://doi.org/10.5281/zenodo.14892764},
+}
+```
 
 ## People
 
