@@ -221,13 +221,14 @@ If you use the Wearanize+ dataset, please cite the reference paper as:
 and the dataset as:
 
 ```bibtex
-@dataset{sikder2025wearanizeplus_dataset,
-  title     = {Wearanize+: A multimodal dataset (N=130) with wearable-based at-home overnight sleep recordings},
-  author    = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tania and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and Zerr, Paul},
-  publisher = {Radboud Data Repository},
-  year      = {2025},
-  doi       = {10.34973/j6jf-9e62},
-  url       = {https://doi.org/10.34973/j6jf-9e62},
+@dataset{niloy_sikder_2025_wearanize_a_multim,
+  author = {Sikder, N.S. and Verkaar, Lieuwe and Paltarzhytskaya, A. (Anastasiya) and Acan, S. (Selin) and Bovy, L. and Tatiana Almazova and Krugliakova, E. (Elena) and Rozenblum, Y.R. and Krauledat, M. and Dresler, M. and Zerr, P.},
+  title = {{Wearanize+: A multimodal dataset (N=130) with wearable-based at-home overnight sleep recordings}},
+  year = 2025,
+  publisher = {Radboud University},
+  version = 1,
+  doi = {10.34973/j6jf-9e62},
+  url = {https://doi.org/10.34973/j6jf-9e62}
 }
 ```
 
