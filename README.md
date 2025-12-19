@@ -220,7 +220,7 @@ If you use the Wearanize+ dataset, please cite the reference paper as:
 
 and the dataset as:
 
-```
+```bibtex
 @dataset{sikder2025wearanizeplus_dataset,
   title     = {Wearanize+: A multimodal dataset (N=130) with wearable-based at-home overnight sleep recordings},
   author    = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tania and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and Zerr, Paul},
@@ -233,7 +233,7 @@ and the dataset as:
 
 If you use the provided scripts, please cite the GitHub repository as:
 
-```
+```bibtex
 @software{sikder2025wearanizeplus,
   author    = {Sikder, Niloy},
   title     = {Wearanize_plus},
