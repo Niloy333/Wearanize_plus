@@ -25,7 +25,7 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) in [this collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) and is available for academic research upon signing a <i>Data Use Agreement</i> (DUA). To request access, download the DUA template ([Microsoft Word](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA.docx) or [editable PDF](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA_with_editable_fields.pdf)), complete the sections on recipient information, (briefly) state your research plan, and send the filled-out form to [Prof. Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl). Access will be granted once the DUA has been fully signed by all parties.
+The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) in [this collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) and is available for academic research upon signing a <i>Data Use Agreement</i> (DUA). To request access, [download the DUA template](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/Wearanize%2B_DUA.docx), complete the sections on recipient information, (briefly) state your research plan, and send the filled-out form to [Prof. Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl). Access will be granted once the DUA has been fully signed by all parties.
 
 ## Devices and Modalities
 
