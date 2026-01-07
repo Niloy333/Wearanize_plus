@@ -38,8 +38,8 @@ file_list = string(file_list(:));
 start_sec_pred = table([], [], 'VariableNames', {'SubjectID', 'psg_pred_start_sec'});
 
 % Loop bounds preserved as in the provided script (single subject at index 81).
-for i = 81:1:81
-    if i ~= 71 && i ~= 56
+for i = 1:1:length(file_list)
+%    if i ~= 71 && i ~= 56
         subject_dir = file_list(i);
         path_parts  = split(subject_dir, filesep);
         sub_id      = path_parts{end-2};
@@ -99,13 +99,11 @@ for i = 81:1:81
         end
     end
 
-    % Free large arrays in long runs
     clear start_index_sec zmax_comp zmax_agg somno_comp somno_mov corr_values max_index start_index end_index
 end
 
-%% Optional: Write predictions (kept disabled)
-% start_sec_pred = join(start_sec_pred, points_data(:, {'SubjectID', 'PSG_start_sec'}), 'Keys', 'SubjectID');
-% writetable(start_sec_pred, 'C:\Users\NSI\sciebo\Truncate_Sync\W+_corr_sync_zmax_somno.xlsx');
+start_sec_pred = join(start_sec_pred, points_data(:, {'SubjectID', 'PSG_start_sec'}), 'Keys', 'SubjectID');
+writetable(start_sec_pred, 'C:\Users\NSI\sciebo\Truncate_Sync\W+_corr_sync_zmax_somno.xlsx');
 
 %% Local Functions
 function zmax_agg = zmax_data_read(subj, points_data)
