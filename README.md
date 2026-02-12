@@ -42,7 +42,7 @@ For transparency and ease of use, the dataset has been released in two versions:
 
 ### *Wearanize+ Raw v1.0*
 
-This version/file contains the raw, unfiltered data collected from the participants of the project. See Section 3.1 and Appendix 2 of the [reference paper](#reference-paper) for more details.
+This version/file contains the raw, unfiltered data collected from the participants of the project. See the "Wearanize+ raw dataset" section and Appendix 2 of the [reference paper](#reference-paper) for more details.
 
 ### *Wearanize+ PlugNPlay v1.0*
 
@@ -50,7 +50,7 @@ This version/file contains a processed, synchronized, and truncated version of t
 
 In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) or the subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced to *channel_b*.
 
-Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See Section 3.2 of the [reference paper](#reference-paper) for more details.
+Since EDF is a widely used format in Neuroscience, the data should be readable across different platforms and environments. The PlugNPlay version has been formatted according to the *EEG-Brain Imaging Data Structure* ([EEG-BIDS v1.10.0](https://bids-specification.readthedocs.io/en/v1.10.0/)) specifications. The usability of the EEG signals has been checked with [*eegFloss*](https://github.com/Niloy333/eegFloss), and the outputs have been added to the corresponding file. See the "Wearanize+ PlugNPlay" section of the [reference paper](#reference-paper) for more details.
 
 > [!IMPORTANT]
 > **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab, and their channel names differ from those collected with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings.**
@@ -94,7 +94,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 ### `manual_synchronization//Zmax-Somnoscreen_manual_sync.m`
 
 - Contains MATLAB code for manual/visual synchronization of Zmax and SOMNOscreen plus recordings based on their respective accelerometer and movement signals.
-- See Section 2.3.3 of the [reference paper](#reference-paper) for more details.
+- See the "Synchronization" section of the [reference paper](#reference-paper) for more details.
 
 ### `manual_synchronization//Zmax-Empatica-Activpal_manual_sync.m`
 
@@ -202,21 +202,22 @@ This work was supported by the Swiss National Science Foundation (SNF), a Vici F
 
 ## Reference Paper
 
-Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). ***Wearanize+*: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research**. Center for Open Science. https://doi.org/10.31219/osf.io/dth8y_v3<br>
-[Read on ResearchGate](https://www.researchgate.net/publication/388542789_Wearanize_A_Multimodal_Dataset_for_Evaluating_Wearable_Technologies_in_Sleep_Research)
+Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). Wearanize+: a multimodal dataset for evaluating wearable technologies in sleep research. SLEEP Advances, 7(1). https://doi.org/10.1093/sleepadvances/zpaf094
 
 ## Citation
 
 If you use the Wearanize+ dataset, please cite the reference paper as:
 
 ```bibtex
-@article{sikder2025wearanizeplus,
-  title     = {Wearanize+: A Multimodal Dataset for Evaluating Wearable Technologies in Sleep Research},
-  author    = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tania and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and Zerr, Paul},
-  journal   = {OSF Preprints},
-  year      = {2025},
-  doi       = {10.31219/osf.io/dth8y_v3},
-  url       = {https://doi.org/10.31219/osf.io/dth8y_v3},
+@article{sikder2025wearanize+,
+  title    ={Wearanize+: A multimodal dataset for evaluating wearable technologies in sleep research},
+  author   ={Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tatiana and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and others},
+  journal  ={SLEEP Advances},
+  pages    ={1-15},
+  year     ={2025},
+  publisher={Oxford University Press}
+  doi      ={10.1093/sleepadvances/zpaf094},
+  url      ={https://academic.oup.com/sleepadvances/article/7/1/zpaf094/8405700}
 }
 ```
 
