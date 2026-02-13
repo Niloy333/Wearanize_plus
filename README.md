@@ -227,9 +227,9 @@ and the dataset as:
 @dataset{niloy_sikder_2025_wearanize_a_multim,
   author    = {Sikder, N.S. and Verkaar, Lieuwe and Paltarzhytskaya, A. (Anastasiya) and Acan, S. (Selin) and Bovy, L. and Tatiana Almazova and Krugliakova, E. (Elena) and Rozenblum, Y.R. and Krauledat, M. and Dresler, M. and Zerr, P.},
   title     = {{Wearanize+: A multimodal dataset (N=130) with wearable-based at-home overnight sleep recordings}},
-  year      = 2025,
+  year      = {2025},
   publisher = {Radboud University},
-  version   = 1,
+  version   = {1},
   doi       = {10.34973/j6jf-9e62},
   url       = {https://doi.org/10.34973/j6jf-9e62}
 }
