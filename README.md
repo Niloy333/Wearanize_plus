@@ -215,7 +215,7 @@ If you use the Wearanize+ dataset, please cite the reference paper as:
   journal  ={SLEEP Advances},
   pages    ={1-15},
   year     ={2025},
-  publisher={Oxford University Press}
+  publisher={Oxford University Press},
   doi      ={10.1093/sleepadvances/zpaf094},
   url      ={https://academic.oup.com/sleepadvances/article/7/1/zpaf094/8405700}
 }
