@@ -27,7 +27,7 @@ The dataset can facilitate a range of applications, including device-specific va
 
 The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and is available for research use upon signing a <i>Data Use Agreement</i> (DUA). To request access:
 
-- [Download the DUA template](https://hochschule-rhein-waal.sciebo.de/s/GQABNzP8xZMndHr).
+- [Download the DUA template](https://github.com/Niloy333/Wearanize_plus/raw/refs/heads/base/DUA_forms/Wearanize+_Radboudumc_DUA_v2.0.docx).
 - Complete the recipient information section and clearly describe your research plan.
 - Send the completed form to [Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl).
 - Create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA.
