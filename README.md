@@ -30,7 +30,7 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 - [Download the DUA template](https://github.com/Niloy333/Wearanize_plus/raw/refs/heads/base/DUA_forms/Wearanize+_Radboudumc_DUA_v2.0.docx).
 - Complete the recipient information section and clearly describe your research plan.
 - Send the completed form to [Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl).
-- Create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA.
+- Create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA. If you use an existing ORCID account, please include the intended email address and make it visible.
 - Log in to RDR via ORCID.
 - Visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579).
 - Click “Request access.”
