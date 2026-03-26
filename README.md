@@ -218,14 +218,14 @@ If you use the Wearanize+ dataset, please cite the reference paper as:
 
 ```bibtex
 @article{sikder2025wearanize+,
-  title    ={Wearanize+: A multimodal dataset for evaluating wearable technologies in sleep research},
-  author   ={Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tatiana and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and others},
-  journal  ={SLEEP Advances},
-  pages    ={1-15},
-  year     ={2025},
-  publisher={Oxford University Press},
-  doi      ={10.1093/sleepadvances/zpaf094},
-  url      ={https://academic.oup.com/sleepadvances/article/7/1/zpaf094/8405700}
+  title    = {Wearanize+: A multimodal dataset for evaluating wearable technologies in sleep research},
+  author   = {Sikder, Niloy and Verkaar, Lieuwe and Paltarzhytskaya, Anastasiya and Acan, Selin and Bovy, Leonore and Almazova, Tatiana and Krugliakova, Elena and Rosenblum, Yevgenia and Krauledat, Matthias and Dresler, Martin and others},
+  journal  = {SLEEP Advances},
+  pages    = {1-15},
+  year     = {2025},
+  publisher= {Oxford University Press},
+  doi      = {10.1093/sleepadvances/zpaf094},
+  url      = {https://academic.oup.com/sleepadvances/article/7/1/zpaf094/8405700}
 }
 ```
 
