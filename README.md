@@ -25,9 +25,11 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) in [this collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) and is available for research upon signing a <i>Data Use Agreement</i> (DUA). To request access, [download the DUA template](https://hochschule-rhein-waal.sciebo.de/s/GQABNzP8xZMndHr), complete the sections on recipient information, clearly describe your research plan, and send the filled-out form to [Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl). 
+The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and is available for research upon signing a <i>Data Use Agreement</i> (DUA). To request access, [download the DUA template](https://hochschule-rhein-waal.sciebo.de/s/GQABNzP8xZMndHr), complete the sections on recipient information, clearly describe your research plan, and send the filled-out form to [Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl).
 
-Please note that simply clicking “Request access” on the RDR collection page will not grant you access to the dataset. **You must complete the DUA and submit it to Dr. Dresler via your institute or lab head.** Access will be granted once the DUA has been fully agreed upon between the legal departments of Radboudumc and your institute and signed by all parties.
+Next, create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA. Log in to RDR via ORCID, visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579), and click “Request access.” This registers your credentials in RDR and makes it easier to grant you access once the agreement process is complete. If multiple researchers need access under the same DUA, each person should request access in RDR using their own ORCID account following the same procedure.
+
+Please note that simply clicking “Request access” on the RDR collection page will not grant you access. **You must complete the DUA and submit it to Dr. Dresler via your institute or lab head.** Access will be granted once the DUA has been fully agreed upon between the legal departments of Radboudumc and your institute.
 
 ## Devices and Modalities
 
