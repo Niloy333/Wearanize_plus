@@ -35,7 +35,7 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 - Visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579).
 - Click “Request access.”
 
-This registers your credentials in RDR and facilitates granting access once the DUA has been approved. If multiple researchers want access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
+This registers your credentials in RDR and makes it easier to grant access once the DUA has been approved by Radboudumc. If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
 
 ## Devices and Modalities
 
