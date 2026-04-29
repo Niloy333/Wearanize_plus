@@ -116,9 +116,9 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | ActivPal_ACCX | Accelerometer X axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCY | Accelerometer Y axis | ⓖ | ActivPAL | 20 |
 | ActivPal_ACCZ | Accelerometer Z axis | ⓖ | ActivPAL | 20 |
-| Emp_ACCX | Accelerometer X axis | ⓖ/64 | Empatica E4 | 32 |
-| Emp_ACCY | Accelerometer Y axis | ⓖ/64 | Empatica E4 | 32 |
-| Emp_ACCZ | Accelerometer Z axis | ⓖ/64 | Empatica E4 | 32 |
+| Emp_ACCX | Accelerometer X axis | ⓖ/64<sup>#</sup> | Empatica E4 | 32 |
+| Emp_ACCY | Accelerometer Y axis | ⓖ/64<sup>#</sup> | Empatica E4 | 32 |
+| Emp_ACCZ | Accelerometer Z axis | ⓖ/64<sup>#</sup> | Empatica E4 | 32 |
 | Emp_BVP | PPG | Unitless | Empatica E4 | 64 |
 | Emp_EDA | Electrodermal activity | μS | Empatica E4 | 4 |
 | Emp_HR | Mean heart rate derived from BVP | bpm | Empatica E4 | 1 |
@@ -198,7 +198,8 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 > <sup>$</sup>Electrode placement: SOMNOscreen: [10–20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)), Mentalab: [10–10 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)#/media/File:EEG_10-10_system_with_additional_information.svg).<br>
 ⓖ: Gravity (m/s<sup>2</sup>).<br>
 <sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br>
-<sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.
+<sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.<br>
+<sup>#</sup>**Some Parquet files state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source).**
 
 ## Ethical Statements
 
