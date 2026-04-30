@@ -199,7 +199,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 ⓖ: Gravity (m/s<sup>2</sup>).<br>
 <sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br>
 <sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.<br>
-<sup>⚠️</sup>**Some Parquet files state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source).**
+<sup>⚠️</sup>**Files in the dataset state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source).**
 
 ## Ethical Statements
 
