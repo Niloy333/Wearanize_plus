@@ -38,7 +38,7 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 This registers your credentials in RDR and makes it easier to grant access once the DUA has been approved by Radboudumc. If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
 
 > [!IMPORTANT]
-> **We are currently working on releasing an open-access version of the Wearanize+ dataset, containing all physiological data (excluding the questionnaires), which will be available to users without a formal DUA. Please stay tuned for updates.**
+> **We are currently working on releasing an open access version of the Wearanize+ dataset, containing all physiological data (excluding the questionnaires), which will be available to users without a formal DUA. Please stay tuned for updates.**
 
 ## Devices and Modalities
 
