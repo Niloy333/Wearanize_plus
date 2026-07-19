@@ -25,7 +25,16 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and is available for research use upon signing a <i>Data Use Agreement</i> (DUA). To request access:
+The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and can be accessed from two RDR collections—one open-access (named <i>Wearanize+ OA</i>) and the other restricted access. The latter is available for research use upon signing a <i>Data Use Agreement</i> (DUA). Here are the access instructions for both collections:
+
+### Wearanize+ OA
+
+- TBA
+
+> [!IMPORTANT]
+> **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the dataset with restricted access.**
+
+### Wearanize+ (primary/orignal dataset, restricted access)
 
 - Download the DUA template: for countries [in the European Economic Area (EEA)](https://github.com/Niloy333/Wearanize_plus/raw/refs/heads/base/DUA_forms/Wearanize+_Radboudumc_DUA_v2.0.docx), [outside the EEA](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/DTA_Wearanize_nonEU_v1.docx).
 - Complete the recipient information section and clearly describe your research plan.
@@ -33,12 +42,11 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 - Create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA. If you use an existing ORCID account, please include the intended email address and make it visible.
 - Visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579).
 - Log in to RDR via ORCID.
-- Click “Request access” to the collection.
-
-This registers your credentials in RDR and makes it easier to grant access once the DUA has been approved by Radboudumc. If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
+- Click “Request access” to the collection. This registers your credentials in RDR and makes it easier to grant access once the DUA has been approved by Radboudumc.
+- If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
 
 > [!IMPORTANT]
-> **We are currently working on releasing an open access version of the Wearanize+ dataset, containing all physiological data (excluding the questionnaires), which will be available to users without a formal DUA. Please stay tuned for updates.**
+> **This collection contains only one set of manual sleep scores. Both sets of scores are [available here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
 
 ## Devices and Modalities
 
@@ -49,15 +57,18 @@ The following image shows the positions of the mentioned devices and their recor
 
 ## Dataset Versions
 
-For transparency and ease of use, the dataset has been released in two versions: [Wearanize+ Raw v1.0](#wearanize-raw-v10) and [Wearanize+ PlugNPlay v1.0](#wearanize-plugnplay-v10). PlugNPlay would be the ideal version for most projects, while the Raw version allows tracing back to the original data and may provide the opportunity for further analysis. Here are the differences in their contents:
+For transparency and ease of use, the Wearanize+ dataset (and Wearanize+ OA) been released in two versions: [Wearanize+ Raw](#wearanize-raw-v10--v11-oa) and [Wearanize+ PlugNPlay](#wearanize-plugnplay-v10--v11-oa). PlugNPlay would be the ideal version for most projects, while the Raw version allows tracing back to the original data and may provide the opportunity for further analysis. Here are the differences in their contents:
 
-### *Wearanize+ Raw v1.0*
+### *Wearanize+ Raw v1.0 (& v1.1 OA)*
 
-This version/file contains the raw, unfiltered data collected from the participants of the project. See the "Wearanize+ raw dataset" section and Appendix 2 of the [reference paper](#reference-paper) for more details.
+This file/directory contains the raw, unfiltered data collected from the participants of the project. See the "Wearanize+ raw dataset" section and Appendix 2 of the [reference paper](#reference-paper) for more details.
 
-### *Wearanize+ PlugNPlay v1.0*
+### *Wearanize+ PlugNPlay v1.0 (& v1.1 OA)*
 
-This version/file contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single file and stored in European Data Format (EDF), preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files as 'PSG_Manual_score' and 'PSG_USleep_score' at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_ID]_[channel_name]* and stored with the Float32 datatype (if they are read in Float64, convert them back to Float32 to save space). The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
+This file/directory contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single file and stored in European Data Format (EDF), preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_ID]_[channel_name]* and stored with the Float32 datatype. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
+
+> [!NOTE]
+> If the data is read as float64, convert them to float32 to reduce memory load.
 
 In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) or the subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced to *channel_b*.
 
@@ -65,6 +76,9 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 
 > [!IMPORTANT]
 > **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab, and their channel names differ from those collected with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings.**
+
+> [!WARNING]
+> **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based maunual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based maunual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
 
 ## Script Descriptions
 
@@ -187,7 +201,9 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 | PSG_Pz | EEG channel Pz | µV | Mentalab | 250 |
 | PSG_T7 | EEG channel T7 | µV | Mentalab | 250 |
 | PSG_T8 | EEG channel T8 | µV | Mentalab | 250 |
-| PSG_Manual_score | Manually-identified sleep scores<sup>ⓢ</sup> from PSG data | Unitless | N/A | 1/30 |
+| PSG_Manual_score<br>(PlugNPlay v1.0) | Manually-identified sleep scores<sup>ⓢ</sup> from PSG data | Unitless | N/A | 1/30 |
+| PSG_Manual_scor1<br>(PlugNPlay v1.1) | Manually-identified sleep scores<sup>ⓢ</sup> from PSG data | Unitless | N/A | 1/30 |
+| PSG_Manual_scor2<br>(PlugNPlay v1.1) | Manually-identified sleep scores<sup>ⓢ</sup> from PSG data | Unitless | N/A | 1/30 |
 | PSG_USleep_score | Automatic sleep scores<sup>ⓢ</sup> identified by Usleep v2.0 | Unitless | N/A | 1/30 |
 | Zmax_ACCX | Accelerometer X axis | ⓖ | Zmax | 256 |
 | Zmax_ACCY | Accelerometer Y axis | ⓖ | Zmax | 256 |
@@ -202,7 +218,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 ⓖ: Gravity (m/s<sup>2</sup>).<br>
 <sup>ⓟ</sup>Labels: 1: Prone, 2: Upright, 3: Left, 4: Right, 5: Upright (head), 6: Supine.<br>
 <sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.<br>
-<sup>⚠️</sup>**Files in the dataset state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source).**
+<sup>⚠️</sup>**Files in PlugNPlay v1.0 state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source). The units were fixed in PlugNPlay v1.1.**
 
 ## Ethical Statements
 
@@ -246,6 +262,8 @@ and the dataset as:
   url       = {https://doi.org/10.34973/j6jf-9e62}
 }
 ```
+> [!NOTE]  
+> Even if you use data from Wearanize+ OA (the open-access collection), please cite the primary dataset mentioned above for consistency.
 
 If you use the provided scripts, please cite the GitHub repository as:
 
