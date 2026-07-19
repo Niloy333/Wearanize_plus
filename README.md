@@ -29,7 +29,7 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 
 ### Wearanize+ OA
 
-- TBA
+- TBA soon
 
 > [!IMPORTANT]
 > **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the dataset with restricted access.**
@@ -68,7 +68,7 @@ This file/directory contains the raw, unfiltered data collected from the partici
 This file/directory contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single file and stored in European Data Format (EDF), preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_ID]_[channel_name]* and stored with the Float32 datatype. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
 
 > [!NOTE]
-> If the data is read as float64, convert them to float32 to reduce memory load.
+> If the data is read as Float64, convert them to Float32 to reduce memory load.
 
 In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) or the subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced to *channel_b*.
 
