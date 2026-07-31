@@ -25,7 +25,10 @@ The dataset can facilitate a range of applications, including device-specific va
 
 ## Access Instructions
 
-The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and can be accessed from two RDR collections—one open-access (named <i>Wearanize+ OA</i>) and the other restricted access. The latter is available for research use upon signing a <i>Data Use Agreement</i> (DUA). Here are the access instructions for both collections:
+The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and can be accessed from two RDR collections—one open-access (named <i>Wearanize+ OA</i>) and the other restricted access (referred to as "Wearanize+"). The latter is only accessible upon signing a <i>Data Use Agreement</i> (DUA). Here are the access instructions for both collections:
+
+> [!CAUTION]
+> **Both the Wearanize+ and Wearanize+ OA datasets may only be used for scientific research purposes. By using either dataset, you agree that you will not attempt to identify any of the study's participants.**
 
 ### Wearanize+ OA
 
@@ -68,7 +71,7 @@ This file/directory contains the raw, unfiltered data collected from the partici
 This file/directory contains a processed, synchronized, and truncated version of the raw data. To streamline usability and avoid repeating the extensive preprocessing steps, data for each participant was consolidated into a single file and stored in European Data Format (EDF), preserving all metadata and signal properties. PSG-based Manual and automatic sleep scores were also integrated into the EDF files at a sampling rate of 1/30 Hz. Time-series signals were labeled according to the convention *[device_ID]_[channel_name]* and stored with the Float32 datatype. The PlugNPlay version includes data from 100 participants (out of the total 130) for whom both PSG and Zmax data were available, and manual sleep scoring could be performed.
 
 > [!NOTE]
-> If the data is read as Float64, convert them to Float32 to reduce memory load.
+> If the data is read as Float64, convert it to Float32 to reduce memory load.
 
 In most cases, the channel names were kept consistent with the names provided by the associated device. However, they were sometimes modified for clarity or broader compatibility. See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) or the subject-wise *sub-nnn_task-sleep_channels.tsv* files for detailed information on specific channels. *[device_name]_[channel_a]:[channel_b]* indicates that *channel_a* was referenced to *channel_b*.
 
@@ -78,7 +81,7 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 > **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab, and their channel names differ from those collected with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings.**
 
 > [!WARNING]
-> **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based maunual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based maunual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
+> **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based manual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based maunual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
 
 ## Script Descriptions
 
