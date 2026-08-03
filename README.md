@@ -28,7 +28,7 @@ The dataset can facilitate a range of applications, including device-specific va
 The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and can be accessed from two RDR collections—one open-access (named <i>Wearanize+ OA</i>) and the other restricted access (referred to as "Wearanize+"). The latter is only accessible upon signing a <i>Data Use Agreement</i> (DUA). Here are the access instructions for both collections:
 
 > [!CAUTION]
-> **Both the Wearanize+ and Wearanize+ OA datasets may only be used for scientific research purposes. By using either dataset, you agree that you will not attempt to identify any of the study's participants.**
+> **Both the Wearanize+ and Wearanize+ OA datasets may only be used for scientific research purposes. By using either dataset, you agree that you will not attempt to identify any participants.**
 
 ### Wearanize+ OA
 
