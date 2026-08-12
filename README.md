@@ -32,7 +32,7 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 
 ### Wearanize+ OA
 
-- TBA soon
+Visit the [Wearanize+ OA collection](https://data.ru.nl/collections/di/dcmn/DSC_wrnzpoa_t0000925a_195); direct download links are available there.
 
 > [!IMPORTANT]
 > **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the dataset with restricted access.**
