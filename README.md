@@ -82,6 +82,8 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 
 > [!WARNING]
 > **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based manual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based maunual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
+>
+> The EEG artifact labels present in the PlugNPlay datasets are the outcome of auto-detection by [<i>eegUsability v1.0</i>](https://github.com/Niloy333/eegFloss). No separate manual artifact scoring has been performed on the EEG signals (PSG or Zmax) so far.
 
 ## Script Descriptions
 
