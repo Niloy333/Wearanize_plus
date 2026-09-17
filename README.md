@@ -34,9 +34,6 @@ The Wearanize+ dataset is hosted on the <i>Radboud Data Repository</i> (RDR) and
 
 Visit the [Wearanize+ OA collection](https://data.ru.nl/collections/di/dcmn/DSC_wrnzpoa_t0000925a_195); direct download links are available there.
 
-> [!IMPORTANT]
-> **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the dataset with restricted access.**
-
 ### Wearanize+ (primary/orignal dataset, restricted access)
 
 - Download the DUA template: for countries [in the European Economic Area (EEA)](https://github.com/Niloy333/Wearanize_plus/raw/refs/heads/base/DUA_forms/Wearanize+_Radboudumc_DUA_v2.0.docx), [outside the EEA](https://github.com/Niloy333/Wearanize_plus/blob/base/DUA_forms/DTA_Wearanize_nonEU_v1.docx).
@@ -49,7 +46,9 @@ Visit the [Wearanize+ OA collection](https://data.ru.nl/collections/di/dcmn/DSC_
 - If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
 
 > [!IMPORTANT]
-> **This collection contains only one set of manual sleep scores. Both sets of scores are [available here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
+> - **Files in the restricted dataset contain only one set of manual sleep scores. Both sets of scores are [available here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
+> - **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the restricted dataset.**
+> - **The questionnaire data does not include any information on the participants' subjective sleep quality. Please [see the exact questionnaires](https://github.com/Niloy333/Wearanize_plus/tree/base/Supplementary_Materials/Questionnaires) before requesting access.**
 
 ## Devices and Modalities
 
