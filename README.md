@@ -40,7 +40,7 @@ Visit the [Wearanize+ OA collection](https://data.ru.nl/collections/di/dcmn/DSC_
 - Complete the recipient information section and clearly describe your research plan.
 - Send the completed form to [Dr. Martin Dresler](https://www.radboudumc.nl/en/people/martin-dresler) via [email](mailto:martin.dresler@donders.ru.nl).
 - Create an [ORCID account](https://orcid.org/) using the same email address you provided in the DUA. If you use an existing ORCID account, please include the intended email address and make it visible.
-- Visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579).
+- Visit the [Wearanize+ collection](https://data.ru.nl/collections/di/dcmn/DSC_wearanize_t0000657a_579) on RDR.
 - Log in to RDR via ORCID.
 - Click “Request access” to the collection. This registers your credentials in RDR and makes it easier to grant access once the DUA has been approved by Radboudumc.
 - If multiple researchers need access under the same DUA, each person should submit an access request in RDR using their own ORCID account following the same procedure.
