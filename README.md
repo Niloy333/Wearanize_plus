@@ -296,15 +296,15 @@ If you use the provided scripts, please cite the GitHub repository as:
 
 These works make substantive use of the Wearanize+ dataset by analyzing its recordings to generate new insights or build new tools (in reverse-chronological order):
 
-1. Thapa, R., Sun, C., Lehn-Schiøler, W. T., Kivelson, S. C., Hanif, U., Moore, H., Zhang, H. G., Ahmed, H., Dige, M., Lorenzen, N. R., Heremans, E. R. M., Specht, A., Gimenez, U., Guillard, R., Brink-Kjær, A., Zou, J., & Mignot, E. (2026). *Learning transferable human physiology from two million hours of sleep with SleepFM-2* (Version 2). arXiv. [10.48550/arXiv.2609.06849](https://doi.org/10.48550/arXiv.2609.06849)
+1. Thapa, R., Sun, C., Lehn-Schiøler, W. T., Kivelson, S. C., Hanif, U., Moore, H., Zhang, H. G., Ahmed, H., Dige, M., Lorenzen, N. R., Heremans, E. R. M., Specht, A., Gimenez, U., Guillard, R., Brink-Kjær, A., Zou, J., & Mignot, E. (2026). Learning transferable human physiology from two million hours of sleep with SleepFM-2 (Version 2). arXiv. [10.48550/arXiv.2609.06849](https://doi.org/10.48550/arXiv.2609.06849)
 
-2. Parry, Y. D., & Briganti, G. (2026). Spectral validity and spindle detection of wearable frontal electroencephalography: A per-subject calibration framework and systematic validation against polysomnography using the Wearanize+ dataset. *Sleep Research*. [10.1002/slp2.70057](https://doi.org/10.1002/slp2.70057)
+2. Parry, Y. D., & Briganti, G. (2026). Spectral validity and spindle detection of wearable frontal electroencephalography: A per-subject calibration framework and systematic validation against polysomnography using the Wearanize+ dataset. Sleep Research. [10.1002/slp2.70057](https://doi.org/10.1002/slp2.70057)
 
-3. Parry, Y. D., & Briganti, G. (2026). Validity and limitations of the Empatica E4 wristband for autonomic and thermoregulatory sleep monitoring against concurrent polysomnography: A Wearanize+ dataset study. *openRxiv*. [10.64898/2026.06.10.26355348](https://doi.org/10.64898/2026.06.10.26355348)
+3. Parry, Y. D., & Briganti, G. (2026). Validity and limitations of the Empatica E4 wristband for autonomic and thermoregulatory sleep monitoring against concurrent polysomnography: A Wearanize+ dataset study. openRxiv. [10.64898/2026.06.10.26355348](https://doi.org/10.64898/2026.06.10.26355348)
 
-4. Parry, Y. D., & Briganti, G. (2026). Signal quality screening and automated sleep stage agreement in home EEG: A systematic comparison of Dreamento and YASA on the Wearanize+ dataset. *openRxiv*. [10.64898/2026.06.01.26354591](https://doi.org/10.64898/2026.06.01.26354591)
+4. Parry, Y. D., & Briganti, G. (2026). Signal quality screening and automated sleep stage agreement in home EEG: A systematic comparison of Dreamento and YASA on the Wearanize+ dataset. openRxiv. [10.64898/2026.06.01.26354591](https://doi.org/10.64898/2026.06.01.26354591)
 
-5. Coon, W., & Ogg, M. (2026). Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages. *npj Digital Medicine*. [10.1038/s41746-026-02970-2](https://doi.org/10.1038/s41746-026-02970-2)
+5. Coon, W., & Ogg, M. (2026). Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages. npj Digital Medicine. [10.1038/s41746-026-02970-2](https://doi.org/10.1038/s41746-026-02970-2)
 
 [See all citing works on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=2955228908321166349&scipsc=&q=&scisbd=1)
 
