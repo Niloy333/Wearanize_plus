@@ -13,6 +13,8 @@
 
 Table of Contents: [Overview](#overview) | [Access Instructions](#access-instructions) | [Devices and Modalities](#devices-and-modalities) | [Dataset Versions](#dataset-versions) | [Script Descriptions](#script-descriptions) | [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) | [Ethical Statements](#ethical-statements) | [Funding](#funding) | [Reference Paper](#reference-paper) | [Citation](#citation) | [People](#people)
 
+---
+
 ## Overview
 
 The Wearanize+ dataset comprises overnight sleep recordings from 130 healthy participants (one night each) aged between 18 and 39 years (mean = 23.16 years; SD = 4.34; 89F & 41M). Each participant's sleep was recorded simultaneously using three wearable devices—a [*Zmax* EEG headband](https://hypnodynecorp.com/), an [*Empatica E4* wristband](https://empatica.com/en-eu/research/e4/), and an [*ActivPAL* leg patch](https://kb.palt.com/articles/palpatch/)—alongside full polysomnography (PSG) using [*SOMNOscreen plus*](https://somnomedics.de/en/solutions/sleep_diagnostics/stationary_sleep_lab_psg/somnoscreen-plus/) or [*Mentalab Explore Pro*](https://mentalab.com/products/) (for a few participants). It also includes the responses to three widely used questionnaires—the *Pittsburgh Sleep Quality Index* (PSQI), the *Mannheim Dream Questionnaire* (MADRE), and the *Patient Health Questionnaire* (PHQ-9)—providing information on the participants' sleep, dreams, and overall health. The PSG data has been manually sleep-scored by an expert sleep scorer and automatically sleep-scored by [*USleep v2.0*](https://sleep.ai.ku.dk/). Both sets of scores are included in the dataset. For more details, see the [reference paper](#reference-paper). 
@@ -22,6 +24,8 @@ See [Access Instructions](#access-instructions) for a step-by-step guide to obta
 The dataset is the outcome of a research project bearing the same name, carried out at the [Trigon Building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/trigon) of the [Donders Centre for Cognitive Neuroimaging](https://www.ru.nl/en/departments/institutes/donders-centre-for-cognitive-neuroimaging), Radboud University (Nijmegen, The Netherlands). The study was conducted by members of [Donders Sleep & Memory Lab](https://dreslerlab.org/), in collaboration with Radboud University Medical Center (Radboudumc, Nijmegen, The Netherlands) and Hochschule Rhein-Waal (Kleve, Germany), between October 2023 and August 2024.
 
 The dataset can facilitate a range of applications, including device-specific validations of the three wearables, development of (device-specific) automatic sleep-stage scorers (autoscorers) based on the provided PSG-based sleep scores, methods for handling missing or corrupted data, and evaluation of alternative (as well as compound) sensor modalities for sleep scoring. It has already been used for developing Zmax-based autoscorers, such as [*ezscore*](https://github.com/coonwg1/ezscore) and [*u-sleep-w*](https://github.com/alitsaberi/zmax-datasets), and validating [an automatic Zmax–Somnoscreen synchronization method](https://github.com/Niloy333/Wearanize_plus/blob/base/automatic_synchronization/Zmax-Somnoscreen_auto_sync.m). One of our key objectives behind creating this dataset is to leverage these multimodal recordings to build robust, multi-wearable sleep-scoring models that approach PSG-grade performance while minimizing the impact of EEG artifacts.
+
+---
 
 ## Access Instructions
 
@@ -50,12 +54,16 @@ Visit the [Wearanize+ OA collection](https://data.ru.nl/collections/di/dcmn/DSC_
 > - **Wearanize+ OA does not contain the questionnaire data mentioned above, which is part of the restricted dataset.**
 > - **The questionnaire data does not include any information on the participants' subjective sleep quality. Please [see the exact questionnaires](https://github.com/Niloy333/Wearanize_plus/tree/base/Supplementary_Materials/Questionnaires) before requesting access.**
 
+---
+
 ## Devices and Modalities
 
 The following image shows the positions of the mentioned devices and their recording modalities. <br>
 **Recordings from the experimental devices are not a part of the dataset.**
 
 <img src="https://github.com/Niloy333/Wearanize_plus/blob/base/figures/Figure%202.jpg" alt="device modalities" width="500">
+
+---
 
 ## Dataset Versions
 
@@ -83,6 +91,8 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 > **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based manual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based manual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
 >
 > **The EEG artifact labels present in the PlugNPlay datasets are the outcome of auto-detection by [<i>eegUsability v1.0</i>](https://github.com/Niloy333/eegFloss). See [here](https://github.com/Niloy333/Wearanize_plus/tree/base#manual_artifact_scores) for manually identified artifact scores.**
+
+---
 
 ## Script and File Descriptions
 
@@ -154,6 +164,8 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 #### `Manual_artifact_scores_epochwise_sub-001–sub-032.zip`
 
 - Contains the time-segmented scores converted to 10-second epochs, following Sections 2.1.1.3–2.1.1.4 of [the eegFloss paper](https://doi.org/10.48550/arXiv.2507.06433). Each epoch is assigned the label covering the majority of its duration, with ties resolved by a fixed order of precedence.
+
+---
 
 ## PlugNPlay Channel Descriptions
 
@@ -249,17 +261,25 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 <sup>ⓢ</sup>Labels: -1: Unscorable, 0: Wake, 1: N1, 2: N2, 3: N3, 4: REM.<br>
 <sup>⚠️</sup>**Files in PlugNPlay v1.0 state this unit as ⓖ/16. However, the actual unit is ⓖ/64 (same as the source). The units were fixed in PlugNPlay v1.1.**
 
+---
+
 ## Ethical Statements
 
 This study was conducted in accordance with the Donders Centre for Cognitive Neuroimaging (DCCN) blanket approval, protocol ‘Imaging Human Cognition’ (NL45659.091.14), approved by METC Oost-Nederland (2014/288).
+
+---
 
 ## Funding
 
 This work was supported by the Swiss National Science Foundation (SNF), a Vici Fellowship from the Dutch Research Council (NWO), and the European Union’s Horizon Europe Programme (HORIZON-MSCA-2021-PF-01-01) through a Marie Skłodowska-Curie Postdoctoral Fellowship (Grant No. 101066123, GlymphoSleep).
 
+---
+
 ## Reference Paper
 
 Sikder, N., Verkaar, L., Paltarzhytskaya, A., Acan, S., Bovy, L., Almazova, T., Krugliakova, E., Rosenblum, Y., Krauledat, M., Dresler, M., & Zerr, P. (2025). Wearanize+: a multimodal dataset for evaluating wearable technologies in sleep research. SLEEP Advances, 7(1). [10.1093/sleepadvances/zpaf094](https://doi.org/10.1093/sleepadvances/zpaf094)
+
+---
 
 ## Citation
 
@@ -307,6 +327,8 @@ If you use the provided scripts, please cite the GitHub repository as:
 }
 ```
 
+---
+
 ## People
 
 **Principal investigator**: [Martin Dresler](https://scholar.google.com/citations?hl=en&user=Y-hAEQYAAAAJ&view_op=list_works&sortby=pubdate)<br>
@@ -316,6 +338,8 @@ If you use the provided scripts, please cite the GitHub repository as:
 **Supervision**: [Matthias Krauledat](https://scholar.google.com/citations?hl=en&user=n9q-wxgAAAAJ&view_op=list_works&sortby=pubdate), [Paul Zerr](https://scholar.google.com/citations?hl=en&user=9CldqFoAAAAJ&view_op=list_works&sortby=pubdate), [Yevgenia Rosenblum](https://scholar.google.com/citations?hl=en&user=9pl_iyMAAAAJ&view_op=list_works&sortby=pubdate)
 
 **For questions, comments, queries regarding data access, or interest in collaboration, please [contact Martin Dresler](mailto:martin.dresler@donders.ru.nl).**
+
+---
 
 ## Research Using Wearanize+
 
@@ -331,5 +355,5 @@ These works make substantive use of the Wearanize+ dataset by analyzing its reco
 
 5. Coon, W., & Ogg, M. (2026). Sleep EEG foundation models reveal within-stage microstructure that improves health screening beyond traditional stages. npj Digital Medicine. [10.1038/s41746-026-02970-2](https://doi.org/10.1038/s41746-026-02970-2)
 
-[See all citing works on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=2955228908321166349&scipsc=&q=&scisbd=1)
+[See all citing articles on Google Scholar](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=2955228908321166349&scipsc=&q=&scisbd=1)
 
