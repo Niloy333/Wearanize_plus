@@ -11,7 +11,7 @@
 
 **—A multimodal dataset with wearable-based overnight sleep recordings**
 
-Table of Contents: [Overview](#overview) | [Access Instructions](#access-instructions) | [Devices and Modalities](#devices-and-modalities) | [Dataset Versions](#dataset-versions) | [Script Descriptions](#script-descriptions) | [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) | [Ethical Statements](#ethical-statements) | [Funding](#funding) | [Reference Paper](#reference-paper) | [Citation](#citation) | [People](#people)
+Table of Contents: [Overview](#overview) | [Access Instructions](#access-instructions) | [Devices and Modalities](#devices-and-modalities) | [Dataset Versions](#dataset-versions) | [Script and File Descriptions](#script-and-file-descriptions) | [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) | [Ethical Statements](#ethical-statements) | [Funding](#funding) | [Reference Paper](#reference-paper) | [Citation](#citation) | [People](#people)
 
 ---
 
