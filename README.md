@@ -80,11 +80,11 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 > **Please note that PSG data for Sub115, Sub124, Sub129, and Sub130 were collected with Mentalab, and their channel names differ from those collected with Somnoscreen (used for all other participants). See [PlugNPlay Channel Descriptions](#plugnplay-channel-descriptions) for the exact channel mappings.**
 
 > [!WARNING]
-> **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based manual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based maunual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
+> **Wearanize+ PlugNPlay v1.0 contains only one set of PSG-based manual sleep scores (EDF channel name: <i>PSG_Manual_score</i>), whereas Wearanize+ OA PlugNPlay v1.1 contains two sets of PSG-based manual sleep scores (EDF channel names: <i>PSG_Manual_scor1</i>, <i>PSG_Manual_scor2</i>). Both sets of sleep scores can be downloaded from [here](https://github.com/Niloy333/Wearanize_plus/tree/base/manual_sleep_scores).**
 >
-> The EEG artifact labels present in the PlugNPlay datasets are the outcome of auto-detection by [<i>eegUsability v1.0</i>](https://github.com/Niloy333/eegFloss). No separate manual artifact scoring has been performed on the EEG signals (PSG or Zmax) so far.
+> **The EEG artifact labels present in the PlugNPlay datasets are the outcome of auto-detection by [<i>eegUsability v1.0</i>](https://github.com/Niloy333/eegFloss). See [here](#manual-artifact-scores) for manually identified artifact scores.**
 
-## Script Descriptions
+## Script and File Descriptions
 
 ### `read_PlugNPlay_EDF.py`
 
@@ -96,39 +96,64 @@ Since EDF is a widely used format in Neuroscience, the data should be readable a
 - Provides example code to read individual EDF files and extract information from multiple EDF files of the PlugNPlay version using MATLAB.
 - Note: Storing raw signals from all EDF files simultaneously requires substantial memory.
 
-### `PlugNPlay_preparation//create_PlugNPlay_parquet.py`
+### PlugNPlay_preparation//
+
+#### `create_PlugNPlay_parquet.py`
 
 - Contains the codes used to create the PlugNPlay version from the raw version of the dataset.
 - The PlugNPlay version was first generated in Parquet format, storing data as Pandas DataFrames for efficient processing.
 - The Parquet files are also available in the data repository as *Wearanize+_PlugNPlay_Parquet_v1.0.zip*. If needed, they can serve as alternatives to the EDF files in *Wearanize+_PlugNPlay_v1.0.zip*. More information and usage instructions of these files are available in `extra_scripts//read_PlugNPlay.py` and `extra_scripts//read_PlugNPlay.m`.
 
-### `PlugNPlay_preparation//parquet_to_EDF.py`
+#### `parquet_to_EDF.py`
 
 - Contains the scripts used to convert the Parquet files into EDF format while preserving all relevant signal information and metadata.
 
-### `EEG-BIDS_preparation//BIDS_derivative.py`
+### EEG-BIDS_preparation//
+
+#### `BIDS_derivative.py`
 
 - Prepares the EEG-BIDS–compatible derivative dataset containing global metadata and structure definitions.
 
-### `EEG-BIDS_preparation//BIDS_info_1.py`
+#### `BIDS_info_1.py`
 
 - Prepares the EEG-BIDS–compatible dataset with local (file-specific) metadata and participant-level information.
 
-### `automatic_synchronization//Zmax-Somnoscreen_auto_sync.m`
+### automatic_synchronization//
+
+#### `Zmax-Somnoscreen_auto_sync.m`
 
 - Provides MATLAB code to automatically synchronize simultaneously recorded overnight sleep data using the Zmax headband and SOMNOscreen plus PSG devices.
 - To apply this script to new data, organize the input files (Zmax recording, SOMNOscreen plus recording, and Lights Out/Lights On moments from Zmax) in the same structure as in **Wearanize+ Raw v1.0**, and update the input–output directories at the beginning of the script.
 - See Appendix 1 of the [reference paper](#reference-paper) for more details.
 
-### `manual_synchronization//Zmax-Somnoscreen_manual_sync.m`
+### manual_synchronization//
+
+#### `Zmax-Somnoscreen_manual_sync.m`
 
 - Contains MATLAB code for manual/visual synchronization of Zmax and SOMNOscreen plus recordings based on their respective accelerometer and movement signals.
 - See the "Synchronization" section of the [reference paper](#reference-paper) for more details.
 
-### `manual_synchronization//Zmax-Empatica-Activpal_manual_sync.m`
+### manual_synchronization//
+
+#### `Zmax-Empatica-Activpal_manual_sync.m`
 
 - Contains MATLAB code for manual/visual synchronization of Zmax recordings with Empatica E4 and ActivPAL data, based on their respective accelerometer outputs.
 
+### manual_artifact_scores//
+
+#### `Manual_artifact_scores_time_segments_sub-001–sub-032.zip`
+
+- Manual EEG artifact scores for the first 25 subjects of the Wearanize+ PlugNPlay dataset (subject IDs `sub-001` to `sub-032`), used for the external validation of eegUsability in [the eegFloss paper](https://doi.org/10.48550/arXiv.2507.06433). The scorer was blinded to the eegUsability outputs, and the Zmax and PSG recordings of each night were scored independently.
+- Labels: 0: usable data (all unannotated segments), 1: no data, 2: high noise, 3: spiky noise, 4: M-shaped noise, 9: undefined artifact. See the [eegFloss repository](https://github.com/Niloy333/eegFloss#primary-artifacts) and Sections 2.1.1.1–2.1.1.2 of [the eegFloss paper](https://doi.org/10.48550/arXiv.2507.06433) for detailed definitions.
+- Artifacts were scored only in the two Zmax channels (`Zmax_EEGL`, `Zmax_EEGR`) and two PSG channels (`PSG_F3`, `PSG_F4`).
+- The primary artifact (`artifact_1`) is the dominant noise in a segment; the secondary artifact (`artifact_2`), if present, is usually superimposed on it.
+- Zmax channels were scored with the accelerometer signals in view to account for movement artifacts; PSG channels were scored without movement information.
+- Artifact segments shorter than 5 seconds were not annotated.
+- Annotations were made with [EEG-artifact-scorer](https://github.com/Niloy333/EEG-artifact-scorer), an open-source Python application. Feel free to use and adapt it for similar applications.
+
+#### `Manual_artifact_scores_epochwise_sub-001–sub-032.zip`
+
+- Contains the time-segmented scores converted to 10-second epochs, following Sections 2.1.1.3–2.1.1.4 of [the eegFloss paper](https://doi.org/10.48550/arXiv.2507.06433). Each epoch is assigned the label covering the majority of its duration, with ties resolved by a fixed order of precedence.
 
 ## PlugNPlay Channel Descriptions
 
