@@ -1,9 +1,9 @@
 [![Dataset DOI](https://img.shields.io/badge/Dataset%20DOI-10.34973%2Fj6jf--9e62-blue)](https://doi.org/10.34973/j6jf-9e62)
 [![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.1093/sleepadvances/zpaf094-blue)](https://doi.org/10.1093/sleepadvances/zpaf094)
 [![Repository DOI](https://img.shields.io/badge/Repository_DOI-10.5281%2Fzenodo.14892764-blue)](https://doi.org/10.5281/zenodo.14892764)
+![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus)
 <!-- [![DOI](https://zenodo.org/badge/925334641.svg)](https://doi.org/10.5281/zenodo.14892764)-->
 <!--[Repo size](https://img.shields.io/github/repo-size/Niloy333/Wearanize_plus)-->
-![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus)
 <!--[![Repository size](https://img.shields.io/github/repo-size/Niloy333/Wearanize_plus?cacheSeconds=3600)](https://github.com/Niloy333/Wearanize_plus)
 [![Last commit](https://img.shields.io/github/last-commit/Niloy333/Wearanize_plus?cacheSeconds=3600)](https://github.com/Niloy333/Wearanize_plus/commits) -->
 
